@@ -1,0 +1,39 @@
+[
+    {
+    "topic": "Communication",
+    "selected": false,
+    "subtopics": [
+        {
+            "name": "Frequency",
+            "description": "How often you and your partner communicate"
+        },
+        {
+            "name": "Style",
+            "description": "How you communicate"
+        },
+        {
+            "name": "Conflict Resolution",
+            "description": "How you deal with conflict"
+        }
+    ]
+    },
+    {
+        "topic": "Structure",
+        "selected": false,
+        "subtopics": [
+            {
+                "name": "Monogamy",
+                "description": "If you are seeing other people or not"
+            },
+            {
+                "name": "Length",
+                "description": "How long you envision this lasting"
+            },
+            {
+                "name": "Purpose",
+                "description": "Why you're together"
+            }
+        ]
+    
+        }
+]
