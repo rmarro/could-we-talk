@@ -1,18 +1,20 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React, { Component } from 'react';
+import './App.css';
+import Title from "./components/Title";
+import ExplorerContainer from "./components/ExplorerContainer";
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React ❤</h2>
+      <div className="container">
+        <div className="row">
+          <ExplorerContainer>{this.props.children}</ExplorerContainer>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        {/* <div className="row">
+          <SuggestionsContainer>{this.props.children}</SuggestionsContainer>
+        </div> */}
+
       </div>
     );
   }
