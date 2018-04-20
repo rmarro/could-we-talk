@@ -13,7 +13,7 @@ class ExplorerContainer extends React.Component {
         return (
             <div className="explorercontainer">
                 {this.state.topics.map(card => {
-                    return <TopicCard name={card.topic} />
+                    return <TopicCard name={card.topic} subtopics={card.subtopics} />
                 })}
             </div>
         )
