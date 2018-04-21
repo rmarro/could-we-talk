@@ -12,9 +12,9 @@ class TopicCard extends React.Component {
                         <p>{this.props.name}</p>
                     </Panel.Heading>
                     <Panel.Body>
-                        <p>{this.props.subtopics.map(subt => {
-                            return <p>{subt.name}</p>
-                        })}</p>
+                        {this.props.subtopics.map(subt => {
+                            return <p><strong>{subt.name}:</strong> {subt.description}</p>
+                        })}
                     </Panel.Body>
                 </Panel>
             </div>

@@ -1,12 +1,17 @@
 import React from 'react';
-import ExplorerContainer from "../ExplorerContainer";
+import TopicsExplorer from "../TopicsExplorer";
+import topics from "../../topics.json";
+
 
 class CheckUp extends React.Component {
+  state = {
+    topics: topics
+  };
     render() {
       return (
         <div className="container">
           <div className="row">
-            <ExplorerContainer>{this.props.children}</ExplorerContainer>
+            <TopicsExplorer topics={this.state.topics}>{this.props.children}</TopicsExplorer>
           </div>
           {/* <div className="row">
             <SuggestionsContainer>{this.props.children}

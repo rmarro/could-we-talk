@@ -1,7 +1,7 @@
 [
     {
     "topic": "Communication",
-    "selected": false,
+    "id": 1,
     "subtopics": [
         {
             "name": "Frequency",
@@ -19,11 +19,11 @@
     },
     {
         "topic": "Structure",
-        "selected": false,
+        "id": 2,
         "subtopics": [
             {
                 "name": "Monogamy",
-                "description": "If you are seeing other people or not"
+                "description": "Whether either of you can date or hook up with other people"
             },
             {
                 "name": "Length",
@@ -31,7 +31,7 @@
             },
             {
                 "name": "Purpose",
-                "description": "Why you're together"
+                "description": "What you're both looking for-- dating, someone to live with, hook ups, or something else"
             }
         ]
     
