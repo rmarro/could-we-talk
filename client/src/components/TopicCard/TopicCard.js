@@ -1,24 +1,23 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./TopicCard.css";
-import Card, { CardContent } from "material-ui/Card";
+import {Panel} from "react-bootstrap";
 
 
 
-function SimpleCard(props) {
-    return (
+const TopicCard = (props) =>(
+
         <div>
-            <Card>
-                <CardContent>
+            <Panel>
+                <Panel.body>
                     <p>{props.name}</p>
                     <p>{props.subtopics.map(subt => {
                         return <p>{subt.name}</p>
                     })}</p>
-                </CardContent>
-            </Card>
+                </Panel.body>
+            </Panel>
         </div>
-    )
-}
+    
+)
 
 
-export default SimpleCard;
+export default TopicCard;

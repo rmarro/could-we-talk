@@ -1,7 +1,7 @@
 import React from "react";
 import "./ExplorerContainer.css";
 import topics from "../../topics.json";
-import SimpleCard from "../TopicCard";
+import TopicCard from "../TopicCard";
 
 class ExplorerContainer extends React.Component {
 
@@ -13,7 +13,7 @@ class ExplorerContainer extends React.Component {
         return (
             <div className="explorercontainer">
                 {this.state.topics.map(card => {
-                    return <SimpleCard name={card.topic} subtopics={card.subtopics} />
+                    return <TopicCard name={card.topic} subtopics={card.subtopics} />
                 })}
             </div>
         )
