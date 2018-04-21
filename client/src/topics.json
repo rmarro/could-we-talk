@@ -1,7 +1,6 @@
 [
     {
     "topic": "Communication",
-    "id": 1,
     "subtopics": [
         {
             "name": "Frequency",
@@ -19,7 +18,6 @@
     },
     {
         "topic": "Structure",
-        "id": 2,
         "subtopics": [
             {
                 "name": "Monogamy",

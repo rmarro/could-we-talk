@@ -10,7 +10,7 @@ class TopicsExplorer extends React.Component {
         this.handleSelect = this.handleSelect.bind(this);
     
         this.state = {
-          activeKey: '1'
+          activeKey: ""
         };
       }
     
@@ -25,10 +25,10 @@ class TopicsExplorer extends React.Component {
                     {this.props.topics.map(topic => {
                         return (
                             <div>
-                                <Panel eventKey={topic.id}>
+                                <Panel eventKey={topic.topic}>
                                     <Panel.Heading>
                                     <Panel.Title toggle>{topic.topic}</Panel.Title>
-                                    </Panel.Heading>                                    
+                                    </Panel.Heading>         
                                         <Panel.Body collapsible>
                                         {topic.subtopics.map(subt => {
                                             return <p><strong>{subt.name}:</strong> {subt.description}</p>

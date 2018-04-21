@@ -7,6 +7,9 @@ class CheckUp extends React.Component {
   state = {
     topics: topics
   };
+
+  // I think I need to add a function that changes state of subtopic to talk: true and pass that as a prop into the topics explorer, then pass that as a prop (??) into the buttons so that when "we should talk about this" is selected, the state here updates the subtopic. Then the state gets passed to the suggestions explorer, and only renders the suggestions if that subtopic is talk: true (?????)
+
     render() {
       return (
         <div className="container">
@@ -14,9 +17,8 @@ class CheckUp extends React.Component {
             <TopicsExplorer topics={this.state.topics}>{this.props.children}</TopicsExplorer>
           </div>
           {/* <div className="row">
-            <SuggestionsContainer>{this.props.children}
-            actually i think this should be the tab thing?
-            </SuggestionsContainer>
+            <SuggestionsExplorer>{this.props.children}
+            </SuggestionsExplorer>
           </div> */}
   
         </div>
