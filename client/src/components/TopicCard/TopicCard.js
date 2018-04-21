@@ -3,21 +3,23 @@ import "./TopicCard.css";
 import {Panel} from "react-bootstrap";
 
 
-
-const TopicCard = (props) =>(
-
-        <div>
-            <Panel>
-                <Panel.body>
-                    <p>{props.name}</p>
-                    <p>{props.subtopics.map(subt => {
-                        return <p>{subt.name}</p>
-                    })}</p>
-                </Panel.body>
-            </Panel>
-        </div>
-    
-)
-
+class TopicCard extends React.Component {
+    render() {
+        return (
+            <div>
+                <Panel>
+                    <Panel.Heading>
+                        <p>{this.props.name}</p>
+                    </Panel.Heading>
+                    <Panel.Body>
+                        <p>{this.props.subtopics.map(subt => {
+                            return <p>{subt.name}</p>
+                        })}</p>
+                    </Panel.Body>
+                </Panel>
+            </div>
+        )
+    }
+};
 
 export default TopicCard;

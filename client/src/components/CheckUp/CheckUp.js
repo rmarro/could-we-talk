@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ExplorerContainer from "../ExplorerContainer";
 
-class CheckUp extends Component {
+class CheckUp extends React.Component {
     render() {
       return (
         <div className="container">
