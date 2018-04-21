@@ -1,20 +1,22 @@
 import React from "react";
 import "./TopicCard.css";
+import {Panel} from "react-bootstrap";
 
 
 class TopicCard extends React.Component {
-
     render() {
         return (
             <div>
-                <div className="col-md-12">
-                    <div className="topic-card">
+                <Panel>
+                    <Panel.Heading>
                         <p>{this.props.name}</p>
+                    </Panel.Heading>
+                    <Panel.Body>
                         <p>{this.props.subtopics.map(subt => {
                             return <p>{subt.name}</p>
                         })}</p>
-                    </div>
-                </div>
+                    </Panel.Body>
+                </Panel>
             </div>
         )
     }
