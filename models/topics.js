@@ -7,6 +7,27 @@ const TopicSchema = new Schema({
     },
     subtopics: [
         {
+            name: {
+                type: String
+            },
+            description: {
+                type: String
+            },
+            questions: {
+                type: String
+            },
+            starter: {
+                type: String
+            },
+            ideas: [
+                {
+                    type: String
+                }
+            ]
+        }
+    ],
+    resources: [
+        {
             type: String
         }
     ]

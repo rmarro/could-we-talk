@@ -13,8 +13,8 @@ class CheckUp extends React.Component {
 		axios.get("/api/").then((response) => {
 			// ??? what do we do with the data?
 			this.setState({
-				topics: response.data
-			})
+				topics: response
+      });
 		});
   }
   
