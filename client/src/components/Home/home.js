@@ -8,7 +8,7 @@ const Home = () =>
     <Jumbotron>
     <h3>Communication is key to a healthy relationship, but it can be hard to find the right words.</h3>
     <br/>
-    <h4><strong>Could We Talk</strong> helps you reflect on your relationship, and gives you the tools to bring up important conversations with your partner.</h4>
+    <h4><strong>Could We Talk</strong> helps you reflect on your relationship, and gives you tools to bring up important conversations with your partner.</h4>
     </Jumbotron>
 
     <div className="row">

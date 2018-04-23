@@ -5,6 +5,7 @@
             {
                 "name": "Frequency",
                 "description": "How often you and your partner communicate",
+                "talk": false,
                 "questions": "Before talking to your partner, think about what's been on your mind. Do you feel like you're talking too much? Not enough? What questions do you have for your partner? Do you have ideas on how to make things better?",
                 "starter": "Hey, I've been thinking about how often we talk lately. Could we touch base about that when you have a chance?",
                 "ideas": [
@@ -16,6 +17,7 @@
             {
                 "name": "Style",
                 "description": "How you communicate",
+                "talk": false,
                 "questions": "",
                 "starter": "",
                 "ideas": []
@@ -23,6 +25,7 @@
             {
                 "name": "Conflict Resolution",
                 "description": "How you deal with conflict",
+                "talk": false,
                 "questions": "",
                 "starter": "",
                 "ideas": []
@@ -40,6 +43,7 @@
             {
                 "name": "Monogamy",
                 "description": "Whether either of you can date or hook up with other people",
+                "talk": false,
                 "questions": "",
                 "starter": "",
                 "ideas": []
@@ -47,6 +51,7 @@
             {
                 "name": "Length",
                 "description": "How long you envision this lasting",
+                "talk": false,
                 "questions": "",
                 "starter": "",
                 "ideas": []
@@ -54,6 +59,7 @@
             {
                 "name": "Purpose",
                 "description": "What you're both looking for-- dating, someone to live with, hook ups, or something else",
+                "talk": false,
                 "questions": "",
                 "starter": "",
                 "ideas": []
