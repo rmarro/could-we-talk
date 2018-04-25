@@ -50,5 +50,5 @@ class CheckUp extends React.Component {
 
 }
   
-  export default CheckUp;
+export default CheckUp;
   

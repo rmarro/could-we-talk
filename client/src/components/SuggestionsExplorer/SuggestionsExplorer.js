@@ -1,12 +1,10 @@
-//import everything
-//pass topics as prop
-//map each index to a tab
 //within each tab, render an accordion component (that component maps each subtopic)
 
 import React from "react";
 import "./SuggestionsExplorer.css";
 import { Tabs } from "react-bootstrap";
 import { Tab } from "react-bootstrap";
+import SuggestionTab from "../SuggestionTab"; 
 
 
 class SuggestionsExplorer extends React.Component {
@@ -32,7 +30,7 @@ class SuggestionsExplorer extends React.Component {
                     {this.props.topics.map(topic => {
                         return (
                             <Tab eventKey={topic.topic} title={topic.topic}>
-                                Tab content
+                                <SuggestionTab subtopics={topic.subtopics}/>
                             </Tab>
                         )
                     })}
