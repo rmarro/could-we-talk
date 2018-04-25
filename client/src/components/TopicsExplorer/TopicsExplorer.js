@@ -34,7 +34,7 @@ class TopicsExplorer extends React.Component {
 									<Panel.Body collapsible>
 										{/* Make button that calls makeTalkTrue with topic index and subtopic index*/}
 										{topic.subtopics.map((subt, subtopicIndex) => {
-											return <p><strong>{subt.name}:</strong> {subt.description} <Button onClick={() => this.props.makeTalkTrue(topicIndex, subtopicIndex)}>talk</Button></p> 
+											return <p><strong>{subt.name}:</strong> {subt.description} <Button onClick={() => this.props.makeTalkFalse(topicIndex, subtopicIndex)}>not talk</Button> <Button onClick={() => this.props.makeTalkTrue(topicIndex, subtopicIndex)}>talk</Button></p> 
 										})}
 									</Panel.Body>
 								</Panel>
