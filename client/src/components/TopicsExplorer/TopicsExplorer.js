@@ -15,6 +15,7 @@ class TopicsExplorer extends React.Component {
 		};
 	}
 
+	// From accordion to control which section is open
 	handleSelect(activeKey) {
 		this.setState({ activeKey });
 	}
@@ -31,6 +32,7 @@ class TopicsExplorer extends React.Component {
 										<Panel.Title toggle>{topic.topic}</Panel.Title>
 									</Panel.Heading>
 									<Panel.Body collapsible>
+										{/* Make button that calls makeTalkTrue with topic index and subtopic index*/}
 										{topic.subtopics.map((subt, subtopicIndex) => {
 											return <p><strong>{subt.name}:</strong> {subt.description} <Button onClick={() => this.props.makeTalkTrue(topicIndex, subtopicIndex)}>talk</Button></p> 
 										})}
