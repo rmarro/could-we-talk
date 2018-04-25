@@ -23,18 +23,20 @@ class SuggestionTab extends React.Component {
 			<div className="suggestiontab">
 				<PanelGroup accordion id="accordion-controlled-example" activeKey={this.state.activeKey} onSelect={this.handleSelect}>
 					{this.props.subtopics.map(subtopic => {
-						return (
-							<div>
-								<Panel eventKey={subtopic.name}>
-									<Panel.Heading>
-										<Panel.Title toggle>{subtopic.name}</Panel.Title>
-									</Panel.Heading>
-									<Panel.Body collapsible>
-										{/* Make button that calls makeTalkTrue with topic index and subtopic index*/}
-									</Panel.Body>
-								</Panel>
-							</div>
-						)
+                        if (subtopic.talk === true) {
+                            return (
+                                <div>
+                                    <Panel eventKey={subtopic.name}>
+                                        <Panel.Heading>
+                                            <Panel.Title toggle>{subtopic.name}</Panel.Title>
+                                        </Panel.Heading>
+                                        <Panel.Body collapsible>
+                                            {/* Make button that calls makeTalkTrue with topic index and subtopic index*/}
+                                        </Panel.Body>
+                                    </Panel>
+                                </div>
+                            )
+                        }
 					})}
 				</PanelGroup>
 			</div>
