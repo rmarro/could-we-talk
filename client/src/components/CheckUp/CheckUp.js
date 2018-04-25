@@ -2,7 +2,7 @@ import React from 'react';
 import axios from "axios";
 import TopicsExplorer from "../TopicsExplorer";
 import { Button } from "react-bootstrap";
-import topics from "../../topics.json";
+import topics from "../../topicsfull.json";
 
 
 class CheckUp extends React.Component {
