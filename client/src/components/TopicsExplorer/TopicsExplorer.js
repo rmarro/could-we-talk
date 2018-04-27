@@ -2,7 +2,9 @@ import React from "react";
 import "./TopicsExplorer.css";
 import { PanelGroup } from "react-bootstrap";
 import { Panel } from "react-bootstrap";
-import { Button } from "react-bootstrap";
+import { ToggleButton } from "react-bootstrap";
+import { ToggleButtonGroup } from "react-bootstrap";
+import { ButtonToolbar } from "react-bootstrap";
 
 class TopicsExplorer extends React.Component {
 	constructor(props, context) {
@@ -34,7 +36,16 @@ class TopicsExplorer extends React.Component {
 									<Panel.Body collapsible>
 										{/* Make button that calls makeTalkTrue with topic index and subtopic index*/}
 										{topic.subtopics.map((subt, subtopicIndex) => {
-											return <p><strong>{subt.name}:</strong> {subt.description} <Button onClick={() => this.props.makeTalkFalse(topicIndex, subtopicIndex)}>not talk</Button> <Button onClick={() => this.props.makeTalkTrue(topicIndex, subtopicIndex)}>talk</Button></p> 
+											return (
+												<div>
+													<p><strong>{subt.name}:</strong> {subt.description}</p> 
+													<p>
+														<ButtonToolbar>
+														<ToggleButtonGroup type="radio" name="options"><ToggleButton value={1} onClick={() => this.props.makeTalkFalse(topicIndex, subtopicIndex)}>Feeling awesome!</ToggleButton> <ToggleButton value={2} onClick={() => this.props.makeTalkFalse(topicIndex, subtopicIndex)}>Fine for now</ToggleButton> <ToggleButton value={3} onClick={() => this.props.makeTalkTrue(topicIndex, subtopicIndex)}>We should talk about this</ToggleButton></ToggleButtonGroup>
+														</ButtonToolbar>
+														</p>
+												</div>
+											)
 										})}
 									</Panel.Body>
 								</Panel>

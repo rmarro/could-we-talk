@@ -2,17 +2,18 @@ import React from 'react';
 import axios from "axios";
 import TopicsExplorer from "../TopicsExplorer";
 import SuggestionsExplorer from "../SuggestionsExplorer";
+import { Button } from "react-bootstrap";
 // import topics from "../../topicsfull.json";
 
 
 class CheckUp extends React.Component {
   state = {
-    topics: []
+    topics: [],
+    showSuggestions: false
   };
 
   componentDidMount = () => {
 		axios.get("/api/").then((response) => {
-			// ??? what do we do with the data?
 			this.setState({
 				topics: response.data
       });
@@ -34,21 +35,25 @@ class CheckUp extends React.Component {
     console.log(topics);
   }
 
+  showSuggestionsClick = () => {
+    this.setState({ showSuggestions: true })
+  }
+
   render() {
     return (
       <div className="container">
         <div className="row">
           <TopicsExplorer topics={this.state.topics} makeTalkTrue={this.makeTalkTrue} makeTalkFalse={this.makeTalkFalse}>{this.props.children}</TopicsExplorer>
         </div>
+        
+        <Button onClick={this.showSuggestionsClick}>I'm done!</Button>
         <div className="row">
-            <SuggestionsExplorer topics={this.state.topics}>{this.props.children}
-            </SuggestionsExplorer>
+            { this.state.showSuggestions ? <SuggestionsExplorer topics={this.state.topics}>{this.props.children}
+            </SuggestionsExplorer> : null }
           </div>
       </div>
     );
   }
-
 }
   
 export default CheckUp;
-  
