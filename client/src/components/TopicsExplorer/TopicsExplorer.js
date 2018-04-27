@@ -34,7 +34,6 @@ class TopicsExplorer extends React.Component {
 										<Panel.Title toggle>{topic.topic}</Panel.Title>
 									</Panel.Heading>
 									<Panel.Body collapsible>
-										{/* Make button that calls makeTalkTrue with topic index and subtopic index*/}
 										{topic.subtopics.map((subt, subtopicIndex) => {
 											return (
 												<div>

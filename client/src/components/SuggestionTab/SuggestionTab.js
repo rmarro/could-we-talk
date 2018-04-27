@@ -31,7 +31,22 @@ class SuggestionTab extends React.Component {
                                             <Panel.Title toggle>{subtopic.name}</Panel.Title>
                                         </Panel.Heading>
                                         <Panel.Body collapsible>
-                                            {/* Make button that calls makeTalkTrue with topic index and subtopic index*/}
+											<div>
+												<h4>{subtopic.questions}</h4>
+											</div>
+											<br></br>
+											<div>
+												<h4>Starting a conversation is as easy as saying this:</h4>
+												<p>{subtopic.starter}</p>
+											</div>
+											<br></br>
+											<div>
+												<h4>When you're talking, try to describe what's happening, how you feel about it, and what you would like to happen differently. Here are some examples:</h4>
+												{subtopic.ideas.map(idea => {
+													return <li>{idea}</li>
+												})}
+											</div>
+
                                         </Panel.Body>
                                     </Panel>
                                 </div>
