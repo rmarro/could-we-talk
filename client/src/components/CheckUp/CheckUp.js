@@ -43,7 +43,11 @@ class CheckUp extends React.Component {
     return (
       <div className="container">
         <div className="row">
+          <div className="col-md-6">
+          </div>
+          <div className="col-md-6">
           <TopicsExplorer topics={this.state.topics} makeTalkTrue={this.makeTalkTrue} makeTalkFalse={this.makeTalkFalse}>{this.props.children}</TopicsExplorer>
+          </div>
         </div>
         
         <Button onClick={this.showSuggestionsClick}>I'm done!</Button>
