@@ -3,18 +3,13 @@
     border-style: none
 }
 
-.MainNavBar-Header-Brand {
+.MainNavBar-header-brand {
     font-family: 'Arvo', Georgia, Times, serif;
     font-size: 25px;
     color: #61E6ED;
-    
 }
 
-.navbar-nav {
+.MainNavBar-navbar-nav {
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-    font-size: 17px;
-}
-
-.navbar-nav>li>a {
-    color: #d3d3d3
+    font-size: 20px;
 }

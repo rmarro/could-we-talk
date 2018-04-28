@@ -1,4 +1,4 @@
-.jumbotron {
+.Home-jumbotron {
     background-color: #434344;
     color: #61E6ED
   }
@@ -6,10 +6,10 @@
 .jumbo-maintext {
 	font-family: 'Arvo', Georgia, Times, serif;
 	font-size: 47px;
-	line-height: 70px;
+    line-height: 70px;
 }
 
-.jumbo-subtext, .small {
+.jumbo-subtext, .Home-panel-subtext {
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 }
 

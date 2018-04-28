@@ -28,12 +28,12 @@ class TopicsExplorer extends React.Component {
 				<PanelGroup accordion id="accordion-controlled-example" activeKey={this.state.activeKey} onSelect={this.handleSelect}>
 					{this.props.topics.map((topic, topicIndex) => {
 						return (
-							<div>
+							<div className="TopicsExplorer-panel-div">
 								<Panel eventKey={topic.topic}>
 									<Panel.Heading>
-										<Panel.Title toggle>{topic.topic}</Panel.Title>
+										<Panel.Title className="TopicsExplorer-panel-title" toggle>{topic.topic}</Panel.Title>
 									</Panel.Heading>
-									<Panel.Body collapsible>
+									<Panel.Body className="TopicsExplorer-panel-body" collapsible>
 										{topic.subtopics.map((subt, subtopicIndex) => {
 											return (
 												<div>

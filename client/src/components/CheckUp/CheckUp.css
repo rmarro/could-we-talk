@@ -1,0 +1,13 @@
+.CheckUp-diagram-div {
+    min-height: 400px;
+}
+
+.CheckUp-suggestions-col {
+    min-height: 500px;
+}
+
+.CheckUp-showsuggestions-button {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+}

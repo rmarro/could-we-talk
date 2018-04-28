@@ -45,18 +45,26 @@ class CheckUp extends React.Component {
     return (
       <div>
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 CheckUp-diagram-div">
           </div>
           <div className="col-md-6">
           <TopicsExplorer topics={this.state.topics} makeTalkTrue={this.makeTalkTrue} makeTalkFalse={this.makeTalkFalse}>{this.props.children}</TopicsExplorer>
           </div>
         </div>
         
-        <Button onClick={this.showSuggestionsClick}>I'm done!</Button>
         <div className="row">
+          <div className="col-md-12 text-center">
+            <Button className="CheckUp-showsuggestions-button" onClick={this.showSuggestionsClick}>I'm done!</Button>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-md-12 CheckUp-suggestions-col">
+            {/* If state.showSuggestions is true, render suggestionsExplorer, otherwise render null*/}
             { this.state.showSuggestions ? <SuggestionsExplorer topics={this.state.topics}>{this.props.children}
             </SuggestionsExplorer> : null }
           </div>
+        </div>
       </div>
     );
   }

@@ -15,11 +15,11 @@ class MainNavBar extends React.Component {
             <div className="row">
                 <Navbar>
                     <Navbar.Header>
-                        <Navbar.Brand className="MainNavBar-Header-Brand" style={styles["MainNavBar-Header-Brand"]}>
+                        <Navbar.Brand className="MainNavBar-header-brand" style={styles["MainNavBar-Header-Brand"]}>
                             Could We Talk?
                         </Navbar.Brand>
                     </Navbar.Header>
-                    <Nav>
+                    <Nav className="MainNavBar-navbar-nav">
                         <LinkContainer exact="true" to="/">
                             <NavItem eventKey={1}>
                                 Home

@@ -46,7 +46,6 @@ class SuggestionTab extends React.Component {
 													return <li>{idea}</li>
 												})}
 											</div>
-
                                         </Panel.Body>
                                     </Panel>
                                 </div>
