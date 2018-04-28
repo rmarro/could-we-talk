@@ -3,10 +3,11 @@
     border-style: none
 }
 
-.navbar-brand {
+.MainNavBar-Header-Brand {
     font-family: 'Arvo', Georgia, Times, serif;
-    font-size: 22px;
-    color: #61E6ED
+    font-size: 25px;
+    color: #61E6ED;
+    
 }
 
 .navbar-nav {
