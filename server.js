@@ -6,8 +6,14 @@ const app = express();
 const apiRoutes = require("./routes/apiRoutes");
 const mongoose = require("mongoose");
 
-// We'll have to change this for production!
-mongoose.connect("mongodb://localhost/talk_db");
+// If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
+var MONGODB_URI = process.env.MONGODB_URI || 
+"mongodb://localhost/talk_db";
+
+// Set mongoose to leverage built in JavaScript ES6 Promises
+// Connect to the Mongo DB
+mongoose.Promise = Promise;
+mongoose.connect(MONGODB_URI);
 
 // Serve up static assets
 app.use(express.static("client/build"));
