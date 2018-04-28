@@ -4,6 +4,8 @@ import TopicsExplorer from "../TopicsExplorer";
 import SuggestionsExplorer from "../SuggestionsExplorer";
 import { Button } from "react-bootstrap";
 // import topics from "../../topicsfull.json";
+import "./CheckUp.css";
+
 
 
 class CheckUp extends React.Component {
@@ -41,7 +43,7 @@ class CheckUp extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
         <div className="row">
           <div className="col-md-6">
           </div>

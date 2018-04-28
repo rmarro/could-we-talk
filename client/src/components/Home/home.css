@@ -1,0 +1,18 @@
+.jumbotron {
+    background-color: #434344;
+    color: #61E6ED
+  }
+
+.jumbo-maintext {
+	font-family: 'Arvo', Georgia, Times, serif;
+	font-size: 47px;
+	line-height: 70px;
+}
+
+.jumbo-subtext, .small {
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+}
+
+.jumbo-subtext {
+    color: #d3d3d3
+}

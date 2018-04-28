@@ -1,0 +1,19 @@
+.navbar-default {
+    background-color: none;
+    border-style: none
+}
+
+.navbar-brand {
+    font-family: 'Arvo', Georgia, Times, serif;
+    font-size: 22px;
+    color: #61E6ED
+}
+
+.navbar-nav {
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+}
+
+.navbar-nav>li>a {
+    color: #d3d3d3
+}

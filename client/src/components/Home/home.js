@@ -1,14 +1,15 @@
 import React from "react";
+import "./home.css";
 import {Jumbotron} from "react-bootstrap";
 import {Panel} from "react-bootstrap";
 import {PageHeader} from "react-bootstrap";
 
 const Home = () => 
-<div className="home container">
+<div>
     <Jumbotron>
-    <h3>Communication is key to a healthy relationship, but it can be hard to find the right words.</h3>
-    <br/>
-    <h4><strong>Could We Talk</strong> helps you reflect on your relationship, and gives you tools to bring up important conversations with your partner.</h4>
+        <h1 className="jumbo-maintext">Communication is key to a healthy relationship, but it can be hard to find the right words.</h1>
+        <br/>
+        <h2 className="jumbo-subtext"><strong>Could We Talk</strong> helps you reflect on your relationship, and gives you tools to bring up important conversations with your partner.</h2>
     </Jumbotron>
 
     <div className="row">
