@@ -30,7 +30,7 @@ class SuggestionsExplorer extends React.Component {
                     {this.props.topics.map(topic => {
                         return (
                             <Tab eventKey={topic.topic} title={topic.topic}>
-                                <SuggestionTab topic={topic.topic} subtopics={topic.subtopics}/>
+                                <SuggestionTab topic={topic.topic} subtopics={topic.subtopics} resources={topic.resources}/>
                             </Tab> 
                         )
                     })}

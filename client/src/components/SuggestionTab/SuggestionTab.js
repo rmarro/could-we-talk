@@ -1,6 +1,7 @@
 import React from "react";
 import { PanelGroup } from "react-bootstrap";
 import { Panel } from "react-bootstrap";
+import { Well } from "react-bootstrap";
 import "./SuggestionTab.css";
 
 
@@ -40,14 +41,14 @@ class SuggestionTab extends React.Component {
 											<br></br>
 											<div>
 												<h4>Starting a conversation is as easy as saying this:</h4>
-												<p>{subtopic.starter}</p>
+												<Well >{subtopic.starter}</Well>
 											</div>
 											<br></br>
 											<div>
 												<h4>When you're talking, try to describe what's happening, how you feel about it, and what you would like to happen differently. Here are some examples:</h4>
-												{subtopic.ideas.map(idea => {
+												<Well>{subtopic.ideas.map(idea => {
 													return <li>{idea}</li>
-												})}
+												})}</Well>
 											</div>
                                         </Panel.Body>
                                     </Panel>
@@ -56,6 +57,10 @@ class SuggestionTab extends React.Component {
                         }
 					})}
 				</PanelGroup>
+				<Well>Check out these other resources on {this.props.topic}:
+				<p>{this.props.resources.map(resource => {
+					return <li>{resource}</li>
+				})}</p></Well>
 			</div>
 		)
 	}
