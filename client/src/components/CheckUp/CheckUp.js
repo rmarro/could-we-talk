@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from "axios";
+import TopicsDiagram from "../TopicsDiagram";
 import TopicsExplorer from "../TopicsExplorer";
 import SuggestionsExplorer from "../SuggestionsExplorer";
 import { Button } from "react-bootstrap";
@@ -11,7 +12,8 @@ import "./CheckUp.css";
 class CheckUp extends React.Component {
   state = {
     topics: [],
-    showSuggestions: false
+    showSuggestions: false,
+    activeKey: ""
   };
 
   componentDidMount = () => {
@@ -22,6 +24,11 @@ class CheckUp extends React.Component {
 		});
   }
   
+  // From accordion to control which section is open
+	handleSelect = (activeKey) => {
+		this.setState({ activeKey });
+	}
+
   // Set subtopic talk to true
   makeTalkTrue = (topicIndex, subtopicIndex) => {
     const topics = this.state.topics.slice();
@@ -46,9 +53,10 @@ class CheckUp extends React.Component {
       <div>
         <div className="row">
           <div className="col-md-6 CheckUp-diagram-div">
+            <TopicsDiagram handleSelect={this.handleSelect}/>
           </div>
           <div className="col-md-6">
-          <TopicsExplorer topics={this.state.topics} makeTalkTrue={this.makeTalkTrue} makeTalkFalse={this.makeTalkFalse}>{this.props.children}</TopicsExplorer>
+          <TopicsExplorer topics={this.state.topics} makeTalkTrue={this.makeTalkTrue} makeTalkFalse={this.makeTalkFalse} activeKey={this.state.activeKey} handleSelect={this.handleSelect}>{this.props.children}</TopicsExplorer>
           </div>
         </div>
         
