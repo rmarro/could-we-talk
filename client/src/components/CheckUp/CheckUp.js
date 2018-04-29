@@ -5,7 +5,7 @@ import SuggestionsExplorer from "../SuggestionsExplorer";
 import { Button } from "react-bootstrap";
 // import topics from "../../topicsfull.json";
 import "./CheckUp.css";
-import TopicsDiagram from '../TopicsDiagram';
+// import TopicsDiagram from '../TopicsDiagram';
 
 
 
@@ -46,8 +46,8 @@ class CheckUp extends React.Component {
     return (
       <div>
         <div className="row">
-          <div className="col-md-6 CheckUp-diagram-div">
-            <TopicsDiagram />
+          <div className="col-md-6 CheckUp-diagram-div" id="myDiagramDiv" style={{border: 'solid 1px black', width: '100%', height: '600px'}}>
+            {/* <TopicsDiagram /> */}
           </div>
           <div className="col-md-6">
           <TopicsExplorer topics={this.state.topics} makeTalkTrue={this.makeTalkTrue} makeTalkFalse={this.makeTalkFalse}>{this.props.children}</TopicsExplorer>
