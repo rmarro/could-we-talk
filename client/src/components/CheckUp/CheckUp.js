@@ -46,6 +46,7 @@ class CheckUp extends React.Component {
 
   showSuggestionsClick = () => {
     this.setState({ showSuggestions: true })
+    this.setState({ activeKey: "" })
   }
 
   render() {

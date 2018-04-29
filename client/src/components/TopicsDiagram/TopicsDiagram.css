@@ -1,0 +1,24 @@
+.TopicsDiagram-button {
+    font-family: 'Arvo', Georgia, Times, serif;
+    font-weight: 600;
+    font-size: 18px;
+    width: 175px;
+    height: 175px;
+    border-radius: 95px;
+    outline: none !important;
+    transition: ease-in-out .35s ;
+}
+
+
+.TopicsDiagram-button-selected, .TopicsDiagram-button-selected:focus {
+    font-family: 'Arvo', Georgia, Times, serif;
+    border-radius: 95px;
+    outline: 0;
+    font-size: 21px;
+    width: 195px;
+    height: 195px;
+    font-weight: 700;
+    background: purple;
+    color: white;
+    transition: ease-in-out .35s ;
+}
