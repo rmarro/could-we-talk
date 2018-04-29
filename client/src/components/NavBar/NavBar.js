@@ -4,7 +4,7 @@ import {LinkContainer} from "react-router-bootstrap";
 import './NavBar.css';
 
 const styles = {
-    ["MainNavBar-Header-Brand"]: {
+    ["MainNavBar-header-brand"]: {
         color: "#61E6ED"
     }
 }
@@ -15,7 +15,7 @@ class MainNavBar extends React.Component {
             <div className="row">
                 <Navbar>
                     <Navbar.Header>
-                        <Navbar.Brand className="MainNavBar-header-brand" style={styles["MainNavBar-Header-Brand"]}>
+                        <Navbar.Brand className="MainNavBar-header-brand" style={styles["MainNavBar-header-brand"]}>
                             Could We Talk?
                         </Navbar.Brand>
                     </Navbar.Header>

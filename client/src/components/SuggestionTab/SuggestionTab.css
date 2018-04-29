@@ -1,0 +1,13 @@
+.SuggestionTab-div {
+    margin: 15px;
+}
+
+.SuggestionTab-panel {
+    margin-bottom: 3px;
+}
+
+.SuggestionTab-panel-title {
+    font-family: 'Arvo', Georgia, Times, serif;
+    font-weight: 600;
+    font-size: 18px;
+}

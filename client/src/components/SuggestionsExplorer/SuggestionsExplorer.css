@@ -1,0 +1,16 @@
+.SuggestionsExplorer-div {
+    margin: 10px;
+    border: solid grey 2px;
+    border-radius: 8px;
+    min-height: 500px;
+}
+
+.SuggestionsExplorer-div>div>ul {
+    font-family: 'Arvo', Georgia, Times, serif;
+    font-weight: 600;
+    font-size: 20px;
+} 
+
+.SuggestionsExplorer-div>div>ul>li>a {
+    color: black;
+}

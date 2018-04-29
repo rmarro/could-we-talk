@@ -25,14 +25,13 @@ class SuggestionsExplorer extends React.Component {
 
     render() {
         return (
-            <div className="suggestionsexplorer">
+            <div className="SuggestionsExplorer-div">
                 <Tabs activeKey={this.state.activekey} onSelect={this.handleSelect} id="controlled-tab-example">
                     {this.props.topics.map(topic => {
                         return (
                             <Tab eventKey={topic.topic} title={topic.topic}>
-                                <h4>Looks like you want to talk about these aspects of {topic.topic}. Click to see suggestions on getting the conversation started.</h4>
                                 <SuggestionTab topic={topic.topic} subtopics={topic.subtopics}/>
-                            </Tab>
+                            </Tab> 
                         )
                     })}
                 </Tabs>

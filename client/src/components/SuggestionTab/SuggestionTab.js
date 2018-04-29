@@ -1,6 +1,8 @@
 import React from "react";
 import { PanelGroup } from "react-bootstrap";
 import { Panel } from "react-bootstrap";
+import "./SuggestionTab.css";
+
 
 class SuggestionTab extends React.Component {
 	constructor(props, context) {
@@ -16,19 +18,20 @@ class SuggestionTab extends React.Component {
 	// From accordion to control which section is open
 	handleSelect(activeKey) {
 		this.setState({ activeKey });
-	}
+	} 
 
 	render() {
 		return (
-			<div className="suggestiontab">
+			<div className="SuggestionTab-div">
+				<h4>Looks like you want to talk about these aspects of {this.props.topic}. Click to see suggestions on getting the conversation started.</h4>
 				<PanelGroup accordion id="accordion-controlled-example" activeKey={this.state.activeKey} onSelect={this.handleSelect}>
 					{this.props.subtopics.map(subtopic => {
                         if (subtopic.talk === true) {
                             return (
-                                <div>
+                                <div className="SuggestionTab-panel">
                                     <Panel eventKey={subtopic.name}>
                                         <Panel.Heading>
-                                            <Panel.Title toggle>{subtopic.name}</Panel.Title>
+                                            <Panel.Title className="SuggestionTab-panel-title" toggle>{subtopic.name}</Panel.Title>
                                         </Panel.Heading>
                                         <Panel.Body collapsible>
 											<div>

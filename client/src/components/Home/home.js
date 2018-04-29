@@ -17,7 +17,7 @@ const Home = () =>
             <Panel>
                 <Panel.Body>
                     <PageHeader>
-                        <h2>Relationship Check Up</h2>
+                        Relationship Check Up
                         <br/>
                         <small className="Home-panel-subtext">Individually explore aspects of your relationship, and get customized conversation starters for things you want to address.</small>
                     </PageHeader>
@@ -28,7 +28,7 @@ const Home = () =>
             <Panel>
                 <Panel.Body>
                     <PageHeader>
-                        <h2>Relationship Check In</h2>
+                        Relationship Check In
                         <br/>
                         <small className="Home-panel-subtext">You and your partner each complete a check up, then get a customized guide to talking through things you want to discuss.</small>
                     </PageHeader>
