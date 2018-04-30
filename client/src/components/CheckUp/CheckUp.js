@@ -13,8 +13,9 @@ class CheckUp extends React.Component {
   state = {
     topics: [],
     showSuggestions: false,
-    activeKey: ""
-  };
+    activePanelKey: "",
+    activeDiagramButton: ""
+  }
 
   componentDidMount = () => {
 		axios.get("/api/").then((response) => {
@@ -23,10 +24,14 @@ class CheckUp extends React.Component {
       });
 		});
   }
+
+  diagramButtonSelect = (activeDiagramButton) => {
+    this.setState({ activeDiagramButton })
+  }
   
   // From accordion to control which section is open
-	handleSelect = (activeKey) => {
-		this.setState({ activeKey });
+	panelSelect = (activePanelKey) => {
+		this.setState({ activePanelKey });
 	}
 
   // Set subtopic talk to true
@@ -37,6 +42,7 @@ class CheckUp extends React.Component {
     console.log(topics);
   }
 
+  // Set subtopic talk to false
   makeTalkFalse = (topicIndex, subtopicIndex) => {
     const topics = this.state.topics.slice();
     topics[topicIndex].subtopics[subtopicIndex].talk = false;
@@ -45,8 +51,9 @@ class CheckUp extends React.Component {
   }
 
   showSuggestionsClick = () => {
-    this.setState({ showSuggestions: true })
-    this.setState({ activeKey: "" })
+    this.setState({ showSuggestions: true });
+    this.setState({ activePanelKey: "" });
+    this.setState({ activeDiagramButton: "" })
   }
 
   render() {
@@ -54,10 +61,10 @@ class CheckUp extends React.Component {
       <div>
         <div className="row">
           <div className="col-md-6 CheckUp-diagram-div">
-            <TopicsDiagram handleSelect={this.handleSelect}/>
+            <TopicsDiagram diagramButtonSelect={this.diagramButtonSelect} activeDiagramButton={this.state.activeDiagramButton} panelSelect={this.panelSelect}/>
           </div>
           <div className="col-md-6">
-          <TopicsExplorer topics={this.state.topics} makeTalkTrue={this.makeTalkTrue} makeTalkFalse={this.makeTalkFalse} activeKey={this.state.activeKey} handleSelect={this.handleSelect}>{this.props.children}</TopicsExplorer>
+          <TopicsExplorer topics={this.state.topics} makeTalkTrue={this.makeTalkTrue} makeTalkFalse={this.makeTalkFalse} activeKey={this.state.activePanelKey} panelSelect={this.panelSelect} diagramButtonSelect={this.diagramButtonSelect}/>
           </div>
         </div>
         
@@ -70,8 +77,7 @@ class CheckUp extends React.Component {
         <div className="row">
           <div className="col-md-12 CheckUp-suggestions-col">
             {/* If state.showSuggestions is true, render suggestionsExplorer, otherwise render null*/}
-            { this.state.showSuggestions ? <SuggestionsExplorer topics={this.state.topics}>{this.props.children}
-            </SuggestionsExplorer> : null }
+            { this.state.showSuggestions ? <SuggestionsExplorer topics={this.state.topics}/> : null }
           </div>
         </div>
       </div>

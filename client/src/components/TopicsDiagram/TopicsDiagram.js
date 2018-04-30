@@ -5,12 +5,12 @@ import "./TopicsDiagram.css";
 
 class TopicsDiagram extends React.Component {
 
-    state = {
-        selectedTopic: ""
-    }
 
-    changeSelected = (topic) => {
-        this.setState({ selectedTopic: topic })
+    // This only allows one button to be selected at a time
+    // Being selected changes the class for the css (using :active was not working properly)
+    onTopicClick = (topic) => {
+        this.props.diagramButtonSelect(topic);
+        this.props.panelSelect(topic)
     }
 
     render() {
@@ -18,10 +18,10 @@ class TopicsDiagram extends React.Component {
             <div>
                 <div className="row TopicsDiagram-buttonrow">
                     <div className="col-md-6 text-center">
-                        <Button className={this.state.selectedTopic === "Communication" ? "TopicsDiagram-button-selected" : "TopicsDiagram-button"} onClick={() => {this.changeSelected("Communication"); this.props.handleSelect("Communication")}}>Communication</Button>
+                        <Button className={this.props.activeDiagramButton === "Communication" ? "TopicsDiagram-button-selected" : "TopicsDiagram-button"} onClick={() => this.onTopicClick("Communication")}>Communication</Button>
                     </div>
                     <div className="col-md-6 text-center">
-                        <Button className={this.state.selectedTopic === "Structure" ? "TopicsDiagram-button-selected" : "TopicsDiagram-button"} onClick={() => {this.changeSelected("Structure"); this.props.handleSelect("Structure")}}>Structure</Button>
+                        <Button className={this.props.activeDiagramButton === "Structure" ? "TopicsDiagram-button-selected" : "TopicsDiagram-button"} onClick={() => this.onTopicClick("Structure")}>Structure</Button>
                     </div>
                 </div>
 
@@ -33,10 +33,10 @@ class TopicsDiagram extends React.Component {
 
                 <div className="row TopicsDiagram-buttonrow">
                     <div className="col-md-6 text-center">
-                        <Button className={this.state.selectedTopic === "Sexual Health" ? "TopicsDiagram-button-selected" : "TopicsDiagram-button"} onClick={() => {this.changeSelected("Sexual Health"); this.props.handleSelect("Sexual Health")}}>Sexual Health</Button>
+                        <Button className={this.props.activeDiagramButton === "Sexual Health" ? "TopicsDiagram-button-selected" : "TopicsDiagram-button"} onClick={() => this.onTopicClick("Sexual Health")}>Sexual Health</Button>
                     </div>
                     <div className="col-md-6 text-center">
-                        <Button className={this.state.selectedTopic === "Other" ? "TopicsDiagram-button-selected" : "TopicsDiagram-button"} onClick={() => {this.changeSelected("Other"); this.props.handleSelect("Other")}}>Other</Button>
+                        <Button className={this.props.activeDiagramButton === "Other" ? "TopicsDiagram-button-selected" : "TopicsDiagram-button"} onClick={() => this.onTopicClick("Other")}>Other</Button>
                     </div>
                 </div>
             </div>
@@ -45,5 +45,3 @@ class TopicsDiagram extends React.Component {
 };
 
 export default TopicsDiagram
-
-// {this.state.selectedTopic === "Communication" ? "active TopicsDiagram-button" : "TopicsDiagram-button"}
