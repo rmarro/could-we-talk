@@ -1,3 +1,17 @@
+.TopicsDiagram-buttonrow {
+    min-height: 195px;
+}
+
+.TopicsDiagram-center {
+    font-family: 'Arvo', Georgia, Times, serif;
+    font-weight: 600;
+    font-size: 21px;
+    margin-top: -50px;
+    margin-bottom: -30px;
+    height: 150px;
+    border-radius: 130px;
+}
+
 .TopicsDiagram-button {
     font-family: 'Arvo', Georgia, Times, serif;
     font-weight: 600;

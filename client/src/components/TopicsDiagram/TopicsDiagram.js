@@ -16,7 +16,7 @@ class TopicsDiagram extends React.Component {
     render() {
         return (
             <div>
-                <div className="row">
+                <div className="row TopicsDiagram-buttonrow">
                     <div className="col-md-6 text-center">
                         <Button className={this.state.selectedTopic === "Communication" ? "TopicsDiagram-button-selected" : "TopicsDiagram-button"} onClick={() => {this.changeSelected("Communication"); this.props.handleSelect("Communication")}}>Communication</Button>
                     </div>
@@ -26,14 +26,17 @@ class TopicsDiagram extends React.Component {
                 </div>
 
                 <div className="row">
+                    <div className="col-md-12 text-center">
+                        <Button className="TopicsDiagram-center">Click a topic<br/>to explore</Button>
+                    </div>
                 </div>
 
-                <div className="row">
+                <div className="row TopicsDiagram-buttonrow">
                     <div className="col-md-6 text-center">
-                        <Button className="TopicsDiagram-button" onClick={() => this.props.handleSelect("Sexual Health")}>Sexual Health</Button>
+                        <Button className={this.state.selectedTopic === "Sexual Health" ? "TopicsDiagram-button-selected" : "TopicsDiagram-button"} onClick={() => {this.changeSelected("Sexual Health"); this.props.handleSelect("Sexual Health")}}>Sexual Health</Button>
                     </div>
                     <div className="col-md-6 text-center">
-                        <Button className="TopicsDiagram-button" onClick={() => this.props.handleSelect("Other")}>Other</Button>
+                        <Button className={this.state.selectedTopic === "Other" ? "TopicsDiagram-button-selected" : "TopicsDiagram-button"} onClick={() => {this.changeSelected("Other"); this.props.handleSelect("Other")}}>Other</Button>
                     </div>
                 </div>
             </div>
