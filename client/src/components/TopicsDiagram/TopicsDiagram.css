@@ -1,0 +1,41 @@
+.TopicsDiagram-buttonrow {
+    min-height: 195px;
+}
+
+.TopicsDiagram-center {
+    font-family: 'Arvo', Georgia, Times, serif;
+    font-weight: 600;
+    font-size: 21px;
+    margin-top: -50px;
+    margin-bottom: -30px;
+    height: 150px;
+    border-radius: 130px;
+}
+
+.TopicsDiagram-button {
+    font-family: 'Arvo', Georgia, Times, serif;
+    font-weight: 600;
+    font-size: 18px;
+    width: 175px;
+    height: 175px;
+    border-radius: 95px;
+    background: #434344;
+    border: solid 3px #61E6ED;
+    color: #61E6ED;
+    outline: none !important;
+    transition: ease-in-out .35s ;
+}
+
+
+.TopicsDiagram-button-selected, .TopicsDiagram-button-selected:focus {
+    font-family: 'Arvo', Georgia, Times, serif;
+    border-radius: 95px;
+    outline: 0;
+    font-size: 21px;
+    width: 195px;
+    height: 195px;
+    font-weight: 700;
+    color: #d3d3d3;
+    background: #351268;
+    transition: ease-in-out .35s ;
+}

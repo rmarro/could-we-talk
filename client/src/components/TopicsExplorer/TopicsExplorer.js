@@ -7,32 +7,18 @@ import { ToggleButtonGroup } from "react-bootstrap";
 import { ButtonToolbar } from "react-bootstrap";
 
 class TopicsExplorer extends React.Component {
-	constructor(props, context) {
-		super(props, context);
-
-		this.handleSelect = this.handleSelect.bind(this);
-
-		this.state = {
-			activeKey: ""
-		};
-	}
-
-	// From accordion to control which section is open
-	handleSelect(activeKey) {
-		this.setState({ activeKey });
-	}
 
 	render() {
 		return (
 			<div className="topicsexplorer">
-				<PanelGroup accordion id="accordion-controlled-example" activeKey={this.state.activeKey} onSelect={this.handleSelect}>
+				<PanelGroup accordion id="accordion-controlled-example" activeKey={this.props.activeKey} onSelect={this.props.panelSelect}>
 					{/* Make a panel for each main topic */}
 					{this.props.topics.map((topic, topicIndex) => {
 						return (
 							<div className="TopicsExplorer-panel-div">
 								<Panel eventKey={topic.topic}>
 									<Panel.Heading>
-										<Panel.Title className="TopicsExplorer-panel-title" toggle>{topic.topic}</Panel.Title>
+										<Panel.Title className="TopicsExplorer-panel-title" toggle onClick={ () => {this.props.diagramButtonSelect(topic.topic)}}>{topic.topic}</Panel.Title>
 									</Panel.Heading>
 									<Panel.Body className="TopicsExplorer-panel-body" collapsible>
 										{/* Show the description and button options for each subtopic */}

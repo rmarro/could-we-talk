@@ -16,3 +16,30 @@
 .jumbo-subtext {
     color: #d3d3d3
 }
+
+.Home-panel {
+    /* border: solid 5px #351268; */
+    border-radius: 20px;
+    background-color: #d3d3d3;
+
+}
+
+.Home-panel-body {
+    padding-left: 20px;
+}
+
+.Home-panel-header {
+    font-family: 'Arvo', Georgia, Times, serif;
+    color: #351268;
+}
+
+.Home-panel-subtext {
+    line-height: 1.5;
+    word-spacing: 2px;
+}
+
+.Home-panel-button {
+    background-color: #434344;
+    color: #61E6ED;
+    font-size: 20px;
+}
