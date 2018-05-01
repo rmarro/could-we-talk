@@ -1,11 +1,18 @@
 .Home-jumbotron {
-    background-color: #434344;
-    color: #61E6ED
-  }
+    background-color: #F4F4F3;
+    color: #41B2D2;
+    padding: 20px !important;
+    padding-top: 5px !important;
+    margin-left: 60px;
+    margin-right: 80px;
+    margin-bottom: 100px;
+    border-radius: 13px !important;
+    position: relative;
+}
 
 .jumbo-maintext {
 	font-family: 'Arvo', Georgia, Times, serif;
-	font-size: 47px;
+	font-size: 55px !important;
     line-height: 70px;
 }
 
@@ -14,13 +21,20 @@
 }
 
 .jumbo-subtext {
-    color: #d3d3d3
+    background-color: #786E83;
+    color: #F4F4F3;
+    padding-left: 15px;
+    border-radius: 13px;
+    position: absolute;
+    bottom: -60px;
+    right: -25px;
+    left: 120px;
 }
 
 .Home-panel {
     /* border: solid 5px #351268; */
     border-radius: 20px;
-    background-color: #d3d3d3;
+    background-color: #F4F4F3;
 
 }
 
@@ -30,16 +44,17 @@
 
 .Home-panel-header {
     font-family: 'Arvo', Georgia, Times, serif;
-    color: #351268;
+    color: #192025;
 }
 
 .Home-panel-subtext {
     line-height: 1.5;
     word-spacing: 2px;
+    color: #2B3A46;
 }
 
 .Home-panel-button {
-    background-color: #434344;
-    color: #61E6ED;
+    background-color: #786E83;
+    color: #F4F4F3;
     font-size: 20px;
 }

@@ -5,7 +5,7 @@ import './NavBar.css';
 
 const styles = {
     ["MainNavBar-header-brand"]: {
-        color: "#61E6ED"
+        color: "#F4F4F3"
     }
 }
 
@@ -13,7 +13,7 @@ class MainNavBar extends React.Component {
     render() {
         return(
             <div className="row">
-                <Navbar>
+                <Navbar className="MainNavBar">
                     <Navbar.Header>
                         <Navbar.Brand className="MainNavBar-header-brand" style={styles["MainNavBar-header-brand"]}>
                             Could We Talk?

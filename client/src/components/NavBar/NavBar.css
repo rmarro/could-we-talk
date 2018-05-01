@@ -1,6 +1,10 @@
-.navbar-default {
-    background-color: none;
-    border-style: none
+.MainNavBar .container {
+    border-style: none;
+    padding-bottom: 20px;
+}
+
+.MainNavBar {
+    border-style: none;
 }
 
 .MainNavBar-header-brand {

@@ -9,8 +9,7 @@ const Home = () =>
 <div>
     <Jumbotron className="Home-jumbotron">
         <h1 className="jumbo-maintext">Communication is key to a healthy relationship, but it can be hard to find the right words.</h1>
-        <br/>
-        <h2 className="jumbo-subtext"><strong>Could We Talk</strong> helps you reflect on your relationship, and gives you tools to bring up important conversations with your partner.</h2>
+        <div className="jumbo-subtext"><h3><strong>Could We Talk</strong> helps you reflect on your relationship, and gives you tools to bring up important conversations with your partner.</h3></div>
     </Jumbotron>
 
     <div className="row">
