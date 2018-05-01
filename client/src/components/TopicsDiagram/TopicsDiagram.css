@@ -19,6 +19,9 @@
     width: 175px;
     height: 175px;
     border-radius: 95px;
+    background: #434344;
+    border: solid 3px #61E6ED;
+    color: #61E6ED;
     outline: none !important;
     transition: ease-in-out .35s ;
 }
@@ -32,7 +35,7 @@
     width: 195px;
     height: 195px;
     font-weight: 700;
-    background: purple;
-    color: white;
+    color: #d3d3d3;
+    background: #351268;
     transition: ease-in-out .35s ;
 }

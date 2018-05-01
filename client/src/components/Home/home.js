@@ -20,7 +20,7 @@ const Home = () =>
                     <h1 className="Home-panel-header">Relationship Check Up</h1>
                     <h3 className="Home-panel-subtext">Individually explore aspects of your relationship, and get customized conversation starters for things you want to address.</h3>
                     <br/>
-                    <Button href="/checkup">Get started</Button>
+                    <div className="text-center"><Button className="Home-panel-button" href="/checkup">Get started</Button></div>
                 </Panel.Body>
             </Panel>
         </div>
@@ -30,7 +30,7 @@ const Home = () =>
                     <h1 className="Home-panel-header">Relationship Check In</h1>
                     <h3 className="Home-panel-subtext">You and your partner each complete a check up, then get a customized guide to talking through things you want to discuss.</h3>
                     <br/>
-                    <Button href="/checkin">Get started</Button>
+                    <div className="text-center"><Button className="Home-panel-button" href="/checkin">Get started</Button></div>
                 </Panel.Body>
             </Panel>
         </div>

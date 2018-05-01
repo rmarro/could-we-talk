@@ -18,7 +18,7 @@
 }
 
 .Home-panel {
-    border: solid 5px #351268;
+    /* border: solid 5px #351268; */
     border-radius: 20px;
     background-color: #d3d3d3;
 
@@ -36,4 +36,10 @@
 .Home-panel-subtext {
     line-height: 1.5;
     word-spacing: 2px;
+}
+
+.Home-panel-button {
+    background-color: #434344;
+    color: #61E6ED;
+    font-size: 20px;
 }
