@@ -5,7 +5,7 @@ import './NavBar.css';
 
 const styles = {
     ["MainNavBar-header-brand"]: {
-        color: "#F4F4F3"
+        color: "#FCFBFB"
     }
 }
 

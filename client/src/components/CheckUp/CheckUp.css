@@ -1,3 +1,11 @@
+.CheckUp-container {
+    background-color: #1F1E27;
+}
+
+.CheckUp-toprow {
+    padding-top: 50px;
+}
+
 .CheckUp-diagram-div {
     min-height: 400px;
 }

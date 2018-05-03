@@ -58,8 +58,8 @@ class CheckUp extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="row">
+      <div className="container CheckUp-container">
+        <div className="row CheckUp-toprow">
           <div className="col-md-6 CheckUp-diagram-div">
             <TopicsDiagram diagramButtonSelect={this.diagramButtonSelect} activeDiagramButton={this.state.activeDiagramButton} panelSelect={this.panelSelect}/>
           </div>

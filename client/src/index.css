@@ -1,7 +1,12 @@
 html, body {
-  background-image: url("./background.png");
-}
+    background-color: #1F1E27;
+    /* background-image: url("./background.jpg");
+    background-size: 100%; */
+  }
 
-.container {
-  background-color: #2B3A46
-}
+
+
+/* .container {
+    background-image: url("./background.jpg");
+    background-size: 100%;
+} */

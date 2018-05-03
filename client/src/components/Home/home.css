@@ -1,34 +1,65 @@
-.Home-jumbotron {
-    background-color: #F4F4F3;
-    color: #41B2D2;
-    padding: 20px !important;
-    padding-top: 5px !important;
-    margin-left: 60px;
-    margin-right: 80px;
-    margin-bottom: 100px;
-    border-radius: 13px !important;
+.Home-toprow {
+    background-image: url("../../background.jpg");
+    background-size: 100%;
+    height: 600px;
+}
+
+.Home-jumbotron {  
+    background-color: rgb(0,0,0,0);
+    color: #32ADF9;
+    margin-left: 168px;
+    margin-right: 70px;
     position: relative;
 }
 
+.jumbo-maintext-div {
+    /* border: solid 3px #FCE338;
+    border-radius: 13px; */
+    padding: 20px;
+    margin-left: 100px;
+}
+
 .jumbo-maintext {
-	font-family: 'Arvo', Georgia, Times, serif;
-	font-size: 55px !important;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 90px !important;
+    padding: 5px;
     line-height: 70px;
+    margin-bottom: 70px;
+    background: yellow;
 }
 
-.jumbo-subtext, .Home-panel-subtext {
-    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-}
-
-.jumbo-subtext {
-    background-color: #786E83;
-    color: #F4F4F3;
-    padding-left: 15px;
+.jumbo-subtext-div {
+    border: solid 3px #FCE338;
     border-radius: 13px;
+    padding: 30px;
+    padding-top: 50px;
     position: absolute;
-    bottom: -60px;
-    right: -25px;
-    left: 120px;
+    left: -100px;
+    top: 230px;
+}
+
+.jumbo-subtext1, .jumbo-subtext2, .jumbo-subtext3 {
+    font-weight: 600;
+}
+
+.jumbo-subtext1, .jumbo-subtext3 {
+    font-family: 'Varela Round', sans-serif;
+    color: #FCFBFB;
+    background-color: #1F1E27;
+    margin-right: 500px;
+
+}
+
+.jumbo-subtext2 {
+    color: #fc8376;
+    font-family: 'Noto Serif', serif;
+    background-color: #1F1E27;
+
+}
+
+.Home-bottomrow {
+    background-color: grey;
+    height: 900px;
 }
 
 .Home-panel {
@@ -43,11 +74,12 @@
 }
 
 .Home-panel-header {
-    font-family: 'Arvo', Georgia, Times, serif;
+    font-family: 'Varela Round', sans-serif;
     color: #192025;
 }
 
 .Home-panel-subtext {
+    font-family: 'Noto Serif', serif;
     line-height: 1.5;
     word-spacing: 2px;
     color: #2B3A46;

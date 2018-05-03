@@ -1,18 +1,23 @@
 .MainNavBar .container {
     border-style: none;
-    padding-bottom: 20px;
+    background-color: #1F1E27;
 }
 
 .MainNavBar {
     border-style: none;
+    margin-bottom: 0px;
 }
 
 .MainNavBar-header-brand {
-    font-family: 'Arvo', Georgia, Times, serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: 25px;
 }
 
 .MainNavBar-navbar-nav {
-    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-family: 'Noto Serif', serif;
     font-size: 20px;
+}
+
+.MainNavBar-navbar-nav a {
+    color: #F4F4F3 !important;
 }
