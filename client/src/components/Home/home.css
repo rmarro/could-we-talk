@@ -30,7 +30,7 @@
 
 .Home-panel-header {
     font-family: 'Arvo', Georgia, Times, serif;
-    color: #351268;
+    color: #434344;
 }
 
 .Home-panel-subtext {
@@ -39,7 +39,9 @@
 }
 
 .Home-panel-button {
-    background-color: #434344;
-    color: #61E6ED;
+    background-color: #61E6ED;
+    border: 2px solid #434344;
+    color: #434344;
     font-size: 20px;
+    font-weight: 700;
 }

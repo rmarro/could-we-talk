@@ -12,12 +12,11 @@ const Home = () =>
         <br/>
         <h2 className="jumbo-subtext"><strong>Could We Talk</strong> helps you reflect on your relationship, and gives you tools to bring up important conversations with your partner.</h2>
     </Jumbotron>
-
     <div className="row">
         <div className="col-md-5 col-md-offset-1">
             <Panel className="Home-panel">
                 <Panel.Body className="Home-panel-body">
-                    <h1 className="Home-panel-header">Relationship Check Up</h1>
+                    <h1 className="Home-panel-header">Solo Explore</h1>
                     <h3 className="Home-panel-subtext">Individually explore aspects of your relationship, and get customized conversation starters for things you want to address.</h3>
                     <br/>
                     <div className="text-center"><Button className="Home-panel-button" href="/checkup">Get started</Button></div>
@@ -27,7 +26,7 @@ const Home = () =>
         <div className="col-md-5">
             <Panel className="Home-panel">
                 <Panel.Body className="Home-panel-body">
-                    <h1 className="Home-panel-header">Relationship Check In</h1>
+                    <h1 className="Home-panel-header">Couple Explore</h1>
                     <h3 className="Home-panel-subtext">You and your partner each complete a check up, then get a customized guide to talking through things you want to discuss.</h3>
                     <br/>
                     <div className="text-center"><Button className="Home-panel-button" href="/checkin">Get started</Button></div>
