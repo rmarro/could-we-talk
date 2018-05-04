@@ -2,7 +2,7 @@
     min-height: 195px;
 }
 
-.TopicsDiagram-center {
+.TopicsDiagram-center, .TopicsDiagram-center:hover, .TopicsDiagram-center:focus {
     font-family: 'Arvo', Georgia, Times, serif;
     font-weight: 600;
     font-size: 21px;
@@ -10,6 +10,10 @@
     margin-bottom: -30px;
     height: 150px;
     border-radius: 130px;
+    background: #434344;
+    border: solid 3px #61E6ED;
+    color: #61E6ED;
+    outline: none !important;
 }
 
 .TopicsDiagram-button {
@@ -35,7 +39,8 @@
     width: 195px;
     height: 195px;
     font-weight: 700;
-    color: #d3d3d3;
-    background: #351268;
+    color: #434344;
+    background: #61E6ED;
+    border: 3px solid #d3d3d3;
     transition: ease-in-out .35s ;
 }

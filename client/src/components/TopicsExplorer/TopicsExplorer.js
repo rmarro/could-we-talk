@@ -16,9 +16,9 @@ class TopicsExplorer extends React.Component {
 					{this.props.topics.map((topic, topicIndex) => {
 						return (
 							<div className="TopicsExplorer-panel-div">
-								<Panel eventKey={topic.topic}>
-									<Panel.Heading>
-										<Panel.Title className="TopicsExplorer-panel-title" toggle onClick={ () => {this.props.diagramButtonSelect(topic.topic)}}>{topic.topic}</Panel.Title>
+								<Panel className="TopicsExplorer-panel" eventKey={topic.topic}>
+									<Panel.Heading className={this.props.activeKey === topic.topic ? "TopicsExplorer-panel-heading-selected" : "TopicsExplorer-panel-heading"}>
+										<Panel.Title className={this.props.activeKey === topic.topic ? "TopicsExplorer-panel-title-selected" : "TopicsExplorer-panel-title"} toggle onClick={ () => {this.props.diagramButtonSelect(topic.topic)}}>{topic.topic}</Panel.Title>
 									</Panel.Heading>
 									<Panel.Body className="TopicsExplorer-panel-body" collapsible>
 										{/* Show the description and button options for each subtopic */}
