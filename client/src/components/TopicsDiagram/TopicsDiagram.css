@@ -10,9 +10,10 @@
     margin-bottom: -30px;
     height: 150px;
     border-radius: 130px;
-    background: #434344;
-    border: solid 3px #61E6ED;
-    color: #61E6ED;
+    background: #61E6ED;
+    /* border: solid 3px #d3d3d3; */
+    border: none;
+    color: #434344;
     outline: none !important;
 }
 
@@ -24,12 +25,17 @@
     height: 175px;
     border-radius: 95px;
     background: #434344;
-    border: solid 3px #61E6ED;
-    color: #61E6ED;
+    border: solid 3px #d3d3d3;
+    color: #d3d3d3;
     outline: none !important;
     transition: ease-in-out .35s ;
 }
 
+.TopicsDiagram-button:hover {
+    background: #61E6ED;
+    border: solid 3px #d3d3d3;
+    color: #434344;
+}
 
 .TopicsDiagram-button-selected, .TopicsDiagram-button-selected:focus {
     font-family: 'Arvo', Georgia, Times, serif;
@@ -39,8 +45,8 @@
     width: 195px;
     height: 195px;
     font-weight: 700;
-    color: #434344;
-    background: #61E6ED;
-    border: 3px solid #d3d3d3;
+    color: #61E6ED;
+    background: #434344;
+    border: 3px solid #61E6ED;
     transition: ease-in-out .35s ;
 }

@@ -16,13 +16,13 @@
 
 .TopicsExplorer-panel-heading {
     background-color: #434344 !important;
-    border: solid 3px #61E6ED !important;
+    border: solid 3px #d3d3d3 !important;
     border-radius: 10px;
 }
 
 .TopicsExplorer-panel-heading-selected {
-    background-color: #61E6ED !important;
-    border: solid 3px #d3d3d3 !important;
+    background-color: #434344 !important;
+    border: solid 3px #61E6ED !important;
     border-radius: 10px;
 }
 
@@ -30,14 +30,14 @@
     font-family: 'Arvo', Georgia, Times, serif;
     font-weight: 600;
     font-size: 20px;
-    color: #61E6ED;
+    color: #d3d3d3;
 }
 
 .TopicsExplorer-panel-title-selected {
     font-family: 'Arvo', Georgia, Times, serif;
     font-weight: 600;
     font-size: 20px;
-    color: #434344;
+    color: #61E6ED;
 }
 
 .TopicsExplorer-panel-body {
@@ -45,4 +45,16 @@
     font-size: 16px;
     background-color: #d3d3d3;
     border-radius: 10px;
+}
+
+.TopicsExplorer-button {
+    background: #434344;
+    border-radius: 5px;
+    color: #d3d3d3;
+    border: 2px solid #61E6ED;
+}
+
+.TopicsExplorer-button:global(.active), .TopicsExplorer-button:global(:hover) {
+    background: #61E6ED;
+    color: #434344;
 }

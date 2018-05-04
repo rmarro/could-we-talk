@@ -28,7 +28,7 @@ class TopicsExplorer extends React.Component {
 													<p><strong>{subt.name}:</strong> {subt.description}</p>
 													<p>
 														<ButtonToolbar>
-															<ToggleButtonGroup type="radio" name="options"><ToggleButton value={1} onClick={() => this.props.makeTalkFalse(topicIndex, subtopicIndex)}>Feeling awesome!</ToggleButton> <ToggleButton value={2} onClick={() => this.props.makeTalkFalse(topicIndex, subtopicIndex)}>Fine for now</ToggleButton> <ToggleButton value={3} onClick={() => this.props.makeTalkTrue(topicIndex, subtopicIndex)}>We should talk about this</ToggleButton></ToggleButtonGroup>
+															<ToggleButtonGroup type="radio" name="options"><ToggleButton className="TopicsExplorer-button" value={1} onClick={() => this.props.makeTalkFalse(topicIndex, subtopicIndex)}>Feeling awesome!</ToggleButton> <ToggleButton className="TopicsExplorer-button" value={2} onClick={() => this.props.makeTalkFalse(topicIndex, subtopicIndex)}>Fine for now</ToggleButton> <ToggleButton className="TopicsExplorer-button" value={3} onClick={() => this.props.makeTalkTrue(topicIndex, subtopicIndex)}>We should talk about this</ToggleButton></ToggleButtonGroup>
 														</ButtonToolbar>
 													</p>
 												</div>

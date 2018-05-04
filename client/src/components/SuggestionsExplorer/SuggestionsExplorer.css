@@ -1,7 +1,13 @@
+/* 
+#d3d3d3
+#61E6ED
+#434344 
+*/
+
 .SuggestionsExplorer-div {
     margin: 10px;
-    border: solid grey 2px;
-    border-radius: 5px;
+    /* border: solid #d3d3d3 3px; */
+    border-radius: 10px;
     min-height: 500px;
 }
 
@@ -11,6 +17,24 @@
     font-size: 20px;
 } 
 
+.SuggestionsExplorer-div>div>ul>li {
+    background-color: #434344;
+    color: #d3d3d3;
+}
+
+
+
 .SuggestionsExplorer-div>div>ul>li>a {
-    color: black;
+    color: #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+}
+
+.SuggestionsExplorer-div>div>ul>li:global(.active)>a, .SuggestionsExplorer-div>div>ul>li>a:global(:hover), .SuggestionsExplorer-div>div>ul>li:global(.active)>a:global(:hover), .SuggestionsExplorer-div>div>ul>li:global(:focus)>a, .SuggestionsExplorer-div>div>ul>li:global(.active, :focus) {
+    background-color: #434344;
+    color: #61E6ED;
+    border-left: solid #61E6ED 3px;
+    border-top: solid #61E6ED 3px;
+    border-right: solid #61E6ED 3px;
 }
