@@ -15,4 +15,6 @@
 
 .navbar-nav>.active>a {
     border-radius: 3px;
+    color: #473A55;
+    font-weight: 700;
 }

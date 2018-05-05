@@ -27,7 +27,7 @@ const Home = () =>
             <Panel className="Home-panel">
                 <Panel.Body className="Home-panel-body">
                     <h1 className="Home-panel-header">Couple Explore</h1>
-                    <h3 className="Home-panel-subtext">You and your partner each complete a check up, then get a customized guide to talking through things you want to discuss.</h3>
+                    <h3 className="Home-panel-subtext">Compares answers between you and your partner, then get a customized guide to talking through things you want to discuss.</h3>
                     <br/>
                     <div className="text-center"><Button className="Home-panel-button" href="/checkin">Get started</Button></div>
                 </Panel.Body>

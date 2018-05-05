@@ -4,19 +4,29 @@ import TopicsDiagram from "../TopicsDiagram";
 import TopicsExplorer from "../TopicsExplorer";
 import SuggestionsExplorer from "../SuggestionsExplorer";
 import { Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 // import topics from "../../topicsfull.json";
 import "./CheckUp.css";
 
 
 
 class CheckUp extends React.Component {
-  state = {
-    topics: [],
-    showSuggestions: false,
-    activePanelKey: "",
-    activeDiagramButton: ""
-  }
+  constructor(props, context) {
+    super(props, context);
 
+    this.handleClose = this.handleClose.bind(this);
+
+    this.state = {
+      show: true,
+      topics: [],
+      showSuggestions: false,
+      activePanelKey: "",
+      activeDiagramButton: ""
+    };
+  }
+  
+
+  // Get all the topics info from the db
   componentDidMount = () => {
 		axios.get("/api/").then((response) => {
 			this.setState({
@@ -25,6 +35,12 @@ class CheckUp extends React.Component {
 		});
   }
 
+  // Closes modal
+  handleClose() {
+    this.setState({ show: false });
+  }
+
+  // Active topic in the diagram
   diagramButtonSelect = (activeDiagramButton) => {
     this.setState({ activeDiagramButton })
   }
@@ -50,6 +66,7 @@ class CheckUp extends React.Component {
     console.log(topics);
   }
 
+  // "I'm done" Button to minimize explorer and show suggestions tabs
   showSuggestionsClick = () => {
     this.setState({ showSuggestions: true });
     this.setState({ activePanelKey: "" });
@@ -59,6 +76,23 @@ class CheckUp extends React.Component {
   render() {
     return (
       <div>
+
+        <Modal className="CheckUp-modal" show={this.state.show} onHide={this.handleClose}>
+          <Modal.Header className="CheckUp-modal-header">
+            <Modal.Title className="CheckUp-modal-title">How it works:</Modal.Title>
+          </Modal.Header>
+          <Modal.Body className="CheckUp-modal-body">
+            <h4>Click topics to explore and reflect on your relationship.</h4>
+            <br />
+            <p>
+              You'll choose if each topic is feeling awesome, fine for now, or is something you want to talk about with your partner. You don't have to answer everything! Just do what's relevant to you.
+            </p>
+          </Modal.Body>
+          <Modal.Footer className="CheckUp-modal-footer">
+            <Button className="CheckUp-modal-button" onClick={this.handleClose}>Close</Button>
+          </Modal.Footer>
+        </Modal>
+
         <div className="row">
           <div className="col-md-6 CheckUp-diagram-div">
             <TopicsDiagram diagramButtonSelect={this.diagramButtonSelect} activeDiagramButton={this.state.activeDiagramButton} panelSelect={this.panelSelect}/>

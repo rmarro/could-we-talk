@@ -17,10 +17,10 @@
                 "name": "Tone",
                 "description": "How you communicate with each other",
                 "talk": false,
-                "questions": "Before talking to your partner, think about what's been on your mind. Do you feel like there's too much teasing? Not enough humor? Do you feel misunderstood? Do you have ideas on how to make things better?",
+                "questions": "Before talking to your partner, think about what's been on your mind. Do you feel like there's too much teasing? Not enough humor? Do you often feel misunderstood? Do you have ideas on how to make things better?",
                 "starter": "Could we talk about the way we communicate with each other? I've been thinking a lot about the way we use tone differently.",
                 "ideas": [
-                    "There have been a few times lately when my feelings get hurt and you say you were \"just joking\". You might not mean to be serious when you say those things, but they still hurt. If I say a topic is off limits for jokes, could you honor that?",
+                    "There have been a few times lately when my feelings get hurt and you say you were \"just joking\". You might not mean to be serious when you say those things, but they still hurt. If I say a topic is off limits for jokes, could you respect that?",
                     "I feel like you've been taking everything I say really seriously lately. Being able to joke around in a relationship is really important to me. I don't want to hurt your feelings, but I also don't want to feel like I'm walking on eggshells every time I talk. Is there a certain topic or thing that has been bothering you lately?"
                 ]
             },
@@ -50,13 +50,13 @@
                 "questions": "Before talking to your partner, think about what's been on your mind. Do you want clarity on whether or not you both expect monogamy from this relationship? Have you been exploring the possiblity of an open relationship or polyamory? What questions do you have for your partner?",
                 "starter": "Hey, I have some thoughts and questions for you about how we define our relationship. Could we talk about where we're at in terms of exclusivity?",
                 "ideas": ["I have really strong feelings for you, and want to know how you feel about making it official that we're \"together\". I don't know how you define that, but to me part of that means we only see each other. What do you think about being exclusive?", 
-                "I identify a lot with polyamory and would love to talk with you about our relationship structure. Have you had an open relationship before?" ]
+                "I identify a lot with polyamory and would love to talk with you about our relationship structure. Have you been in an open relationship before?" ]
             },
             {
                 "name": "Length",
                 "description": "How long you envision this lasting",
                 "talk": false,
-                "questions": "Before talking to your partner, think about what's been on your mind. Is a transition coming soon that might influence your relationship? Are you feeling like this might be a person you want to spend a long time with? What questions do you have for your partner?",
+                "questions": "Before talking to your partner, think about what's been on your mind. Is a transition coming soon that might affect your relationship? Are you feeling like this might be a person you want to spend a long time with? What questions do you have for your partner?",
                 "starter": "Hey, could we talk about our thoughts on our relationship, in terms of how long we see this playing out?",
                 "ideas": [
                     "I know you're moving soon, and I don't know how I feel about trying to make this work long distance. I have a lot of fun with you, but I want to make sure we're on the same page about what happens after you move.",
@@ -70,7 +70,7 @@
                 "questions": "Before talking to your partner, think about what's been on your mind. What do you hope to get out of this? What questions do you have for your partner?",
                 "starter": "Hey, could we talk about what we're both expecting from this relationship?",
                 "ideas": [
-                    "I've been having a lot of fun hooking up with you, but I just want to make it really clear to you that I'm not looking for a relationship or long term involvement. Do you feel ok about that?",
+                    "I've been having a lot of fun hooking up with you, but I just want to make it really clear to you that I'm not looking for a relationship or long term involvement. Do you feel ok about that? Are you looking for something different?",
                     "I don't know if we're looking for the same thing right now. I know you're dating kind of casually, but I'm really looking for someone to get into a commited relationship with right now. Is that something you're open to considering or not?"
                 ]
             }
@@ -80,35 +80,51 @@
         ]
     },
     {
-        "topic": "Sexual health",
+        "topic": "Sexual Health",
         "subtopics": [
             {
                 "name": "Sexual satisfaction",
                 "description": "How happy you feel with your sexual activity",
                 "talk": false,
                 "questions": "Before talking to your partner, think about what's been on your mind. Are there things that turn you on that you haven't explored yet with your partner? Do you feel like you want to have sex more, or less?",
-                "starter": "Hey, could we talk about our sex life? I've had some thoughts and question in mind lately...",
+                "starter": "Hey, could we talk about our sex life? I've had some thoughts and question in mind lately.",
                 "ideas": [
-                    "I feel like our sex life has died out a bit lately. I think it would be fun to talk with each other about some things we want to try to spice things up. How does that sound to you?",
-                    "I've been having lots of fun hooking up with you... how are you feeling about how often we see each other? It's been almost every day and I want to check in on how you're feeling about things."
+                    "I feel like our sex life has died out a bit recently. I think it would be fun to talk with each other about some things we want to try to spice things up. How does that sound to you?",
+                    "I've been having lots of fun hooking up with you... how are you feeling about our time together? I want to check in on how you're feeling about things."
                 ]
             },
             {
-                "name": "STIs",
-                "description": "Testing and protection from STIs",
+                "name": "Protection",
+                "description": "Methods for STI and/or pregnancy prevention",
                 "talk": false,
-                "questions": "Before talking to your partner, think about what's been on your mind. Are you on the same page about testing? Do you know your partner's status? Do you have ideas on how to make things better?",
-                "starter": "Hey, could we talk about sexual health stuff at some point soon? I want to touch base before we get carried away by the moment again.",
+                "questions": "Before talking to your partner, think about what's been on your mind. Are you on the same page about testing? Do you know your partner's status? Have you discussed pregnancy prevention?",
+                "starter": "Hey, could we talk about sexual health stuff at some point soon? I want to touch base before we get caught up in the moment.",
                 "ideas": [
                     "The last time we had sex and didn't use a condom, I felt really uncomforable afterwards thinking about it. Using protection is really important to me and I need that to be a part of our sexual health moving forward.",
-                    "I wanted to let you know I'm on PrEP and get tested regularly. Do you see a doctor regularly, or have you been tested recently?"
+                    "Before we hook up, I wanted to let you know I'm on PrEP and get tested regularly. Do you see a doctor regularly, or have you been tested recently?"
+                ]
+            } 
+        ]
+    },
+    {
+        "topic": "Other",
+        "subtopics": [
+            {
+                "name": "",
+                "description": "",
+                "talk": false,
+                "questions": "Before talking to your partner, think about what's been on your mind.",
+                "starter": "",
+                "ideas": [
+                    "",
+                    ""
                 ]
             },
             {
-                "name": "Pregnancy",
+                "name": "",
                 "description": "",
                 "talk": false,
-                "questions": "Before talking to your partner, think about what's been on your mind. Do you have ideas on how to make things better?",
+                "questions": "Before talking to your partner, think about what's been on your mind.",
                 "starter": "",
                 "ideas": [
                     "",
@@ -117,4 +133,5 @@
             }
         ]
     }
+    
 ]

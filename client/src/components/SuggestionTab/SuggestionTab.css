@@ -14,8 +14,8 @@
 }
 
 .SuggestionTab-panel-heading {
-    background-color: #434344 !important;
-    border: solid 3px #61E6ED !important;
+    background-color: #473A55 !important;
+    border: solid 3px #d3d3d3 !important;
     border-radius: 10px;
 }
 
@@ -23,7 +23,7 @@
     font-family: 'Arvo', Georgia, Times, serif;
     font-weight: 600;
     font-size: 20px;
-    color: #61E6ED;
+    color: #d3d3d3;
 }
 
 .SuggestionTab-intro {
@@ -39,6 +39,6 @@
 }
 
 .SuggestionTab-panel-body>div>div.well {
-    background: #61e6ed6b !important;
+    background: #473a554d !important;
     border-radius: 10px;
 }

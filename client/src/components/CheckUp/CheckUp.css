@@ -10,6 +10,8 @@
     font-size: 20px;
     margin-bottom: 30px;
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-    background: #d3d3d3;
-    border: 2px solid #61E6ED;
+    background: #434344;
+    border: 3px solid #61E6ED;
+    color: #61E6ED;
+    font-weight: 700;
 }
