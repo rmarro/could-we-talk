@@ -86,10 +86,10 @@
                 "name": "Sexual satisfaction",
                 "description": "How happy you feel with your sexual activity",
                 "talk": false,
-                "questions": "Before talking to your partner, think about what's been on your mind. Do you feel like you want to have sex more, or less? Are there things that turn you on that you haven't explored yet with your partner?",
+                "questions": "Before talking to your partner, think about what's been on your mind. Are there things that turn you on that you haven't explored yet with your partner? Do you feel like you want to have sex more, or less?",
                 "starter": "Hey, could we talk about our sex life? I've had some thoughts and question in mind lately...",
                 "ideas": [
-                    "I feel like our sex life has died out a bit lately. I think it would be fun to talk with each other about some fantasies or things we want to try to spice things up. How does that sound to you?",
+                    "I feel like our sex life has died out a bit lately. I think it would be fun to talk with each other about some things we want to try to spice things up. How does that sound to you?",
                     "I've been having lots of fun hooking up with you... how are you feeling about how often we see each other? It's been almost every day and I want to check in on how you're feeling about things."
                 ]
             },
@@ -101,14 +101,14 @@
                 "starter": "Hey, could we talk about sexual health stuff at some point soon? I want to touch base before we get carried away by the moment again.",
                 "ideas": [
                     "The last time we had sex and didn't use a condom, I felt really uncomforable afterwards thinking about it. Using protection is really important to me and I need that to be a part of our sexual health moving forward.",
-                    "I just wanted to let you know I'm on PrEP and get tested regularly. Do you see a doctor regularly, or have you been tested recently?"
+                    "I wanted to let you know I'm on PrEP and get tested regularly. Do you see a doctor regularly, or have you been tested recently?"
                 ]
             },
             {
                 "name": "Pregnancy",
                 "description": "",
                 "talk": false,
-                "questions": "Before talking to your partner, think about what's been on your mind.Do you have ideas on how to make things better?",
+                "questions": "Before talking to your partner, think about what's been on your mind. Do you have ideas on how to make things better?",
                 "starter": "",
                 "ideas": [
                     "",

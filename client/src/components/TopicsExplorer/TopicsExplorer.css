@@ -2,6 +2,7 @@
 #d3d3d3
 #61E6ED
 #434344 
+473A55
 */
 
 .TopicsExplorer-panel-div {
@@ -21,8 +22,8 @@
 }
 
 .TopicsExplorer-panel-heading-selected {
-    background-color: #434344 !important;
-    border: solid 3px #61E6ED !important;
+    background-color: #473A55 !important;
+    border: solid 3px #d3d3d3 !important;
     border-radius: 10px;
 }
 
@@ -37,7 +38,7 @@
     font-family: 'Arvo', Georgia, Times, serif;
     font-weight: 600;
     font-size: 20px;
-    color: #61E6ED;
+    color: #d3d3d3;
 }
 
 .TopicsExplorer-panel-body {
@@ -51,7 +52,7 @@
     background: #434344;
     border-radius: 5px;
     color: #d3d3d3;
-    border: 2px solid #61E6ED;
+    border: 2px solid #473A55;
 }
 
 .TopicsExplorer-button:global(.active), .TopicsExplorer-button:global(:hover), .TopicsExplorer-button:global(.active):global(:hover) {

@@ -1,3 +1,8 @@
+/* 
+61E6ED
+#473A55 
+*/
+
 .TopicsDiagram-buttonrow {
     min-height: 195px;
 }
@@ -10,10 +15,10 @@
     margin-bottom: -30px;
     height: 150px;
     border-radius: 130px;
-    background: #61E6ED;
-    /* border: solid 3px #d3d3d3; */
-    border: none;
-    color: #434344;
+    background: #434344;
+    border: solid 3px #61E6ED;
+    /* border: none; */
+    color: #61E6ED;
     outline: none !important;
 }
 
@@ -45,8 +50,8 @@
     width: 195px;
     height: 195px;
     font-weight: 700;
-    color: #61E6ED;
-    background: #434344;
-    border: 3px solid #61E6ED;
+    color: #d3d3d3;
+    background: #473A55;
+    border: 3px solid #d3d3d3;
     transition: ease-in-out .35s ;
 }
