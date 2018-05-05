@@ -24,7 +24,7 @@ class SuggestionTab extends React.Component {
 	render() {
 		return (
 			<div className="SuggestionTab-div">
-				<h4 className="SuggestionTab-intro">Looks like you want to talk about these aspects of {this.props.topic}. Click to see suggestions on getting the conversation started.</h4>
+				<h3 className="SuggestionTab-intro">Looks like you want to talk about these aspects of {this.props.topic}. Click to see suggestions on getting the conversation started.</h3>
 				<PanelGroup accordion id="accordion-controlled-example" activeKey={this.state.activeKey} onSelect={this.handleSelect}>
 					{this.props.subtopics.map(subtopic => {
                         if (subtopic.talk === true) {

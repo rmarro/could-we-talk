@@ -13,13 +13,13 @@ class MainNavBar extends React.Component {
     render() {
         return(
             <div className="row">
-                <Navbar>
+                <Navbar fluid="true">
                     <Navbar.Header>
                         <Navbar.Brand className="MainNavBar-header-brand" style={styles["MainNavBar-header-brand"]}>
                             Could We Talk?
                         </Navbar.Brand>
                     </Navbar.Header>
-                    <Nav className="MainNavBar-navbar-nav">
+                    <Nav pullRight className="MainNavBar-navbar-nav">
                         <LinkContainer exact="true" to="/">
                             <NavItem eventKey={1}>
                                 Home

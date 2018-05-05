@@ -9,7 +9,6 @@ import { Modal } from "react-bootstrap";
 import "./CheckUp.css";
 
 
-
 class CheckUp extends React.Component {
   constructor(props, context) {
     super(props, context);
@@ -55,7 +54,6 @@ class CheckUp extends React.Component {
     const topics = this.state.topics.slice();
     topics[topicIndex].subtopics[subtopicIndex].talk = true;
     this.setState({topics: topics});
-    console.log(topics);
   }
 
   // Set subtopic talk to false
@@ -63,7 +61,6 @@ class CheckUp extends React.Component {
     const topics = this.state.topics.slice();
     topics[topicIndex].subtopics[subtopicIndex].talk = false;
     this.setState({topics: topics});
-    console.log(topics);
   }
 
   // "I'm done" Button to minimize explorer and show suggestions tabs
@@ -76,7 +73,8 @@ class CheckUp extends React.Component {
   render() {
     return (
       <div>
-
+        
+        {/* MODAL */}
         <Modal className="CheckUp-modal" show={this.state.show} onHide={this.handleClose}>
           <Modal.Header className="CheckUp-modal-header">
             <Modal.Title className="CheckUp-modal-title">How it works:</Modal.Title>
@@ -93,6 +91,7 @@ class CheckUp extends React.Component {
           </Modal.Footer>
         </Modal>
 
+        {/* DIAGRAM AND TOPICS PANEL*/}
         <div className="row">
           <div className="col-md-6 CheckUp-diagram-div">
             <TopicsDiagram diagramButtonSelect={this.diagramButtonSelect} activeDiagramButton={this.state.activeDiagramButton} panelSelect={this.panelSelect}/>
@@ -102,15 +101,16 @@ class CheckUp extends React.Component {
           </div>
         </div>
         
+        {/* DONE BUTTON */}
         <div className="row">
           <div className="col-md-12 text-center">
             <Button className="CheckUp-showsuggestions-button" onClick={this.showSuggestionsClick}>I'm done!</Button>
           </div>
         </div>
 
+        {/* SUGGESTIONS */}
         <div className="row">
           <div className="col-md-12 CheckUp-suggestions-col">
-            {/* If state.showSuggestions is true, render suggestionsExplorer, otherwise render null*/}
             { this.state.showSuggestions ? <SuggestionsExplorer topics={this.state.topics}/> : null }
           </div>
         </div>

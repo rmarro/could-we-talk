@@ -22,8 +22,8 @@
 }
 
 .TopicsExplorer-panel-heading-selected {
-    background-color: #473A55 !important;
-    border: solid 3px #d3d3d3 !important;
+    background-color: #434344 !important;
+    border: solid 3px #61E6ED !important;
     border-radius: 10px;
 }
 
@@ -38,7 +38,7 @@
     font-family: 'Arvo', Georgia, Times, serif;
     font-weight: 600;
     font-size: 20px;
-    color: #d3d3d3;
+    color: #61E6ED;
 }
 
 .TopicsExplorer-panel-body {
@@ -58,5 +58,5 @@
 .TopicsExplorer-button:global(.active), .TopicsExplorer-button:global(:hover), .TopicsExplorer-button:global(.active):global(:hover) {
     background: #473A55;
     color: #d3d3d3;
-    border: 2px solid #61E6ED;
+    border: 2px solid #434344;
 }

@@ -5,7 +5,8 @@
 
 .Home-jumbotron {
     background-color: #434344;
-    color: #61E6ED
+    color: #61E6ED;
+    margin-bottom: 0px;
   }
 
 .jumbo-maintext {
@@ -22,18 +23,37 @@
     color: #d3d3d3
 }
 
-.Home-panel {
-    /* border: solid 3px #351268; */
-    border-radius: 20px;
-    background-color: #d3d3d3;
+.Home-line {
+    width: 140px;
+    height: 3px !important;
+    background-color: #61E6ED;
+    margin-bottom: 50px;
+    margin-left: calc(50% - 70px)
+}
 
+.Home-bottom-row {
+    background: #d3d3d3;
+}
+
+.Home-panel {
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-bottom: 200px;
+    border: none;
+    border-left: solid 3px #473A55;
+    background-color: #d3d3d3;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .Home-panel-body {
+    padding: 0px;
     padding-left: 20px;
+    border: none;
 }
 
 .Home-panel-header {
+    margin: 0px;
     font-family: 'Arvo', Georgia, Times, serif;
     color: #473A55;
 }

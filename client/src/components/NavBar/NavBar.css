@@ -1,5 +1,5 @@
 .navbar-default {
-    background-color: none;
+    background: #434344;
     border-style: none
 }
 
@@ -15,6 +15,6 @@
 
 .navbar-nav>.active>a {
     border-radius: 3px;
-    color: #473A55;
+    color: #473A55 !important;
     font-weight: 700;
 }
