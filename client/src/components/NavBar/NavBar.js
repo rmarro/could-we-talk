@@ -33,6 +33,11 @@ class MainNavBar extends React.Component {
                         <NavItem eventKey={3} exact="true" href="#">
                             Couple
                         </NavItem>
+                        <LinkContainer exact="true" to="/resources">
+                            <NavItem eventKey={4}>
+                                Resources
+                            </NavItem>
+                        </LinkContainer>
                     </Nav>
                 </Navbar>
             </div>
