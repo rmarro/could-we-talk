@@ -1,3 +1,8 @@
+/* 
+#351268
+#6d36a3
+*/
+
 .Home-jumbotron {
     background-color: #434344;
     color: #61E6ED
@@ -18,7 +23,7 @@
 }
 
 .Home-panel {
-    /* border: solid 5px #351268; */
+    /* border: solid 3px #351268; */
     border-radius: 20px;
     background-color: #d3d3d3;
 
@@ -30,7 +35,7 @@
 
 .Home-panel-header {
     font-family: 'Arvo', Georgia, Times, serif;
-    color: #434344;
+    color: #351268;
 }
 
 .Home-panel-subtext {
@@ -39,9 +44,9 @@
 }
 
 .Home-panel-button {
-    background-color: #61E6ED;
-    border: 2px solid #434344;
-    color: #434344;
+    background-color: #434344;
+    /* border: 2px solid #351268; */
+    color: #d3d3d3;
     font-size: 20px;
     font-weight: 700;
 }

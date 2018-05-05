@@ -12,3 +12,7 @@
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
     font-size: 20px;
 }
+
+.navbar-nav>.active>a {
+    border-radius: 3px;
+}

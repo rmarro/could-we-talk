@@ -1,13 +1,44 @@
 .SuggestionTab-div {
     margin: 15px;
+    margin-bottom: 100px;
+}
+
+.SuggestionsTab-panel-div {
+    margin-bottom: 3px;
 }
 
 .SuggestionTab-panel {
-    margin-bottom: 3px;
+    border: none;
+    border-radius: 10px !important;
+    background: #434344;
+}
+
+.SuggestionTab-panel-heading {
+    background-color: #434344 !important;
+    border: solid 3px #61E6ED !important;
+    border-radius: 10px;
 }
 
 .SuggestionTab-panel-title {
     font-family: 'Arvo', Georgia, Times, serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
+    color: #61E6ED;
+}
+
+.SuggestionTab-intro {
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    color: #d3d3d3;
+}
+
+.SuggestionTab-panel-body {
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+}
+
+.SuggestionTab-panel-body>div>div.well {
+    background: #61e6ed6b !important;
+    border-radius: 10px;
 }

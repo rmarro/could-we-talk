@@ -54,7 +54,7 @@
     border: 2px solid #61E6ED;
 }
 
-.TopicsExplorer-button:global(.active), .TopicsExplorer-button:global(:hover) {
+.TopicsExplorer-button:global(.active), .TopicsExplorer-button:global(:hover), .TopicsExplorer-button:global(.active):global(:hover) {
     background: #61E6ED;
     color: #434344;
 }

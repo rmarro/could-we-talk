@@ -24,17 +24,17 @@ class SuggestionTab extends React.Component {
 	render() {
 		return (
 			<div className="SuggestionTab-div">
-				<h4>Looks like you want to talk about these aspects of {this.props.topic}. Click to see suggestions on getting the conversation started.</h4>
+				<h4 className="SuggestionTab-intro">Looks like you want to talk about these aspects of {this.props.topic}. Click to see suggestions on getting the conversation started.</h4>
 				<PanelGroup accordion id="accordion-controlled-example" activeKey={this.state.activeKey} onSelect={this.handleSelect}>
 					{this.props.subtopics.map(subtopic => {
                         if (subtopic.talk === true) {
                             return (
-                                <div className="SuggestionTab-panel">
-                                    <Panel eventKey={subtopic.name}>
-                                        <Panel.Heading>
+                                <div className="SuggestionsTab-panel-div">
+                                    <Panel className="SuggestionTab-panel" eventKey={subtopic.name}>
+                                        <Panel.Heading className="SuggestionTab-panel-heading">
                                             <Panel.Title className="SuggestionTab-panel-title" toggle>{subtopic.name}</Panel.Title>
                                         </Panel.Heading>
-                                        <Panel.Body collapsible>
+                                        <Panel.Body className="SuggestionTab-panel-body" collapsible>
 											<div>
 												<h4>{subtopic.questions}</h4>
 											</div>
@@ -66,4 +66,4 @@ class SuggestionTab extends React.Component {
 	}
 };
 
-export default SuggestionTab;
+export default SuggestionTab; 
