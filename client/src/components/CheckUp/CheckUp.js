@@ -73,17 +73,22 @@ class CheckUp extends React.Component {
   render() {
     return (
       <div>
-        
+        <div className="row">
+          <div className="col-md-12 text-center">
+            
+          </div>
+        </div>
+
         {/* MODAL */}
         <Modal className="CheckUp-modal" show={this.state.show} onHide={this.handleClose}>
           <Modal.Header className="CheckUp-modal-header">
             <Modal.Title className="CheckUp-modal-title">How it works:</Modal.Title>
           </Modal.Header>
           <Modal.Body className="CheckUp-modal-body">
-            <h4>Click topics to explore and reflect on your relationship.</h4>
+            <h4>Click topics to explore and reflect on your relationship</h4>
             <br />
             <p>
-              You'll choose if each topic is feeling awesome, fine for now, or is something you want to talk about with your partner. You don't have to answer everything! Just do what's relevant to you.
+              For each topic, you'll choose if it's feeling awesome, fine for now, or is something you want to talk about with your partner. You don't have to answer everything! Just do what's relevant to you.
             </p>
           </Modal.Body>
           <Modal.Footer className="CheckUp-modal-footer">
@@ -92,7 +97,7 @@ class CheckUp extends React.Component {
         </Modal>
 
         {/* DIAGRAM AND TOPICS PANEL*/}
-        <div className="row">
+        <div className="row CheckUp-toprow">
           <div className="col-md-6 CheckUp-diagram-div">
             <TopicsDiagram diagramButtonSelect={this.diagramButtonSelect} activeDiagramButton={this.state.activeDiagramButton} panelSelect={this.panelSelect}/>
           </div>

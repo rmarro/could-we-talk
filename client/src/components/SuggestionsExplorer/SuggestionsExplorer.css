@@ -5,7 +5,8 @@
 */
 
 .SuggestionsExplorer-div {
-    margin: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
     /* border: solid #d3d3d3 3px; */
     border-radius: 10px;
     min-height: 500px;
@@ -34,7 +35,7 @@
 .SuggestionsExplorer-div>div>ul>li:global(.active)>a, .SuggestionsExplorer-div>div>ul>li>a:global(:hover), .SuggestionsExplorer-div>div>ul>li:global(.active)>a:global(:hover), .SuggestionsExplorer-div>div>ul>li:global(:focus)>a, .SuggestionsExplorer-div>div>ul>li:global(.active, :focus) {
     background-color: #434344;
     color: #61E6ED;
-    border-left: solid #d3d3d3 3px;
-    border-top: solid #d3d3d3 3px;
-    border-right: solid #d3d3d3 3px;
+    border-left: solid #61e6ed 3px;
+    border-top: solid #61e6ed 3px;
+    border-right: solid #61e6ed 3px;
 }

@@ -13,12 +13,12 @@
     font-size: 21px;
     margin-top: -50px;
     margin-bottom: -30px;
-    height: 150px;
-    border-radius: 130px;
-    background: #473A55;
-    border: solid 3px #d3d3d3;
+    height: 120px;
+    border-radius: 55px;
+    background: #d3d3d3;
+    border: solid 3px #61e6ed;
     /* border: none; */
-    color: #d3d3d3;
+    color: #434344;
     outline: none !important;
 }
 
