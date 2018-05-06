@@ -1,11 +1,18 @@
 .CheckUp-toprow {
-    padding-top: 70px;
-    padding-right: 70px;
+    padding-top: 30px;
 }
 
+.CheckUp-toprow-div {
+  background-image: url("../../background.png");
+  padding-top: 40px;
+  border-radius: 20px;
+  border: 3px solid #61e6ed;
+  padding-right: 60px;
+  margin-bottom: 10px;
+}
 
 .CheckUp-diagram-div {
-    min-height: 400px;
+    margin-top: 15px;
 }
 
 .CheckUp-suggestions-col {
@@ -13,11 +20,13 @@
 }
 
 .CheckUp-showsuggestions-button {
-    font-size: 20px;
+    font-size: 23px;
     margin-bottom: 30px;
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
     background: #434344;
     border: 3px solid #61E6ED;
     color: #61E6ED;
     font-weight: 700;
+    border-radius: 10px;
+    padding: 10px 22px 10px 22px;
 }

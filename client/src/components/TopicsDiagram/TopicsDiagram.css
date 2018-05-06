@@ -4,7 +4,7 @@
 */
 
 .TopicsDiagram-buttonrow {
-    min-height: 195px;
+    min-height: 210px;
 }
 
 .TopicsDiagram-center, .TopicsDiagram-center:hover, .TopicsDiagram-center:focus {
@@ -16,7 +16,7 @@
     height: 120px;
     border-radius: 55px;
     background: #d3d3d3;
-    border: solid 3px #61e6ed;
+    border: solid 3px #434344;
     /* border: none; */
     color: #434344;
     outline: none !important;
@@ -30,7 +30,7 @@
     height: 175px;
     border-radius: 95px;
     background: #434344;
-    border: solid 3px #d3d3d3;
+    /* border: solid 3px #d3d3d3; */
     color: #d3d3d3;
     outline: none !important;
     transition: ease-in-out .35s ;

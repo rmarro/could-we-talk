@@ -1,6 +1,6 @@
 .navbar-default {
     background: #434344;
-    border-style: none
+    border-style: none;
 }
 
 .MainNavBar-header-brand {
@@ -11,6 +11,10 @@
 .MainNavBar-navbar-nav {
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
     font-size: 20px;
+}
+
+.navbar-nav>li>a {
+    color: #d3d3d3 !important;
 }
 
 .navbar-nav>.active>a {

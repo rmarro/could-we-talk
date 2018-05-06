@@ -101,11 +101,15 @@ class CheckUp extends React.Component {
 
         {/* DIAGRAM AND TOPICS PANEL*/}
         <div className="row CheckUp-toprow">
-          <div className="col-md-6 CheckUp-diagram-div">
-            <TopicsDiagram diagramButtonSelect={this.diagramButtonSelect} activeDiagramButton={this.state.activeDiagramButton} panelSelect={this.panelSelect}/>
-          </div>
-          <div className="col-md-6">
-          <TopicsExplorer topics={this.state.topics} makeTalkTrue={this.makeTalkTrue} makeTalkFalse={this.makeTalkFalse} activeKey={this.state.activePanelKey} panelSelect={this.panelSelect} diagramButtonSelect={this.diagramButtonSelect}/>
+          <div className="col-md-10 col-md-offset-1 CheckUp-toprow-div">
+            <div className="row">
+              <div className="col-md-6 CheckUp-diagram-div">
+                <TopicsDiagram diagramButtonSelect={this.diagramButtonSelect} activeDiagramButton={this.state.activeDiagramButton} panelSelect={this.panelSelect}/>
+              </div>
+              <div className="col-md-6">
+              <TopicsExplorer topics={this.state.topics} makeTalkTrue={this.makeTalkTrue} makeTalkFalse={this.makeTalkFalse} activeKey={this.state.activePanelKey} panelSelect={this.panelSelect} diagramButtonSelect={this.diagramButtonSelect}/>
+              </div>
+            </div>
           </div>
         </div>
         

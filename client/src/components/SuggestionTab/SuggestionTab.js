@@ -43,7 +43,6 @@ class SuggestionTab extends React.Component {
 												<h4>Starting a conversation is as easy as saying this:</h4>
 												<Well >{subtopic.starter}</Well>
 											</div>
-											<br></br>
 											<div>
 												<h4>When you're talking, try to describe what's happening, how you feel about it, and what you would like to happen differently. Here are some examples:</h4>
 												<Well>{subtopic.ideas.map(idea => {

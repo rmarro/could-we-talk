@@ -16,12 +16,11 @@
 .TopicsExplorer-panel {
     border: none;
     border-radius: 10px !important;
-    background: #434344;
 }
 
 .TopicsExplorer-panel-heading {
     background-color: #434344 !important;
-    border: solid 3px #d3d3d3 !important;
+    /* border: solid 3px #d3d3d3 !important; */
     border-radius: 10px;
 }
 
@@ -29,7 +28,6 @@
     background-color: #434344 !important;
     border: solid 3px #61E6ED !important;
     border-radius: 10px;
-    margin-bottom: 2px;
 }
 
 .TopicsExplorer-panel-title {
@@ -57,12 +55,14 @@
     background: #d3d3d3;
     border-radius: 5px;
     color: #473A55;
-    border: 2px solid #473A55;
+    border: 1.5px solid #434344;
     font-weight: 700;
+    margin-top: -7px;
+    margin-bottom: 10px;
 }
 
 .TopicsExplorer-button:global(.active), .TopicsExplorer-button:global(:hover), .TopicsExplorer-button:global(.active):global(:hover) {
     background: #473A55;
     color: #d3d3d3;
-    border: 2px solid #473A55;
+    border: 1.5px solid #473A55;
 }
