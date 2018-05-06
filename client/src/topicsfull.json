@@ -118,24 +118,24 @@
         "subtopics": [
             {
                 "name": "Finances",
-                "description": "",
+                "description": "Paying for things",
                 "talk": false,
-                "questions": "Before talking to your partner, think about what's been on your mind.",
-                "starter": "",
+                "questions": "Before talking to your partner, think about what's been on your mind. How do you deal with sharing financial responsibilities? Do you feel like one of you is paying more or less than you should? Do you have ideas on how to make things better?",
+                "starter": "Hey, could we talk about how we split paying for things?",
                 "ideas": [
-                    "",
-                    ""
+                    "I know we're in really different financial situations right now, and I appreciate you being so willing to help cover things, but it makes me uncomfortable when you insist on paying for everything. It makes me feel good to be able to contribute to things that we do too.",
+                    "I feel like I've been covering most of what we do lately. I wish it wasn't something I had to worry about, but I've been going way over budget every week. We don't have to split everything 50/50, but it would help a lot if we could take turns paying for things."
                 ]
             },
             {
                 "name": "Chores",
-                "description": "",
+                "description": "Getting things done in shared spaces",
                 "talk": false,
-                "questions": "Before talking to your partner, think about what's been on your mind.",
-                "starter": "",
+                "questions": "Before talking to your partner, think about what's been on your mind. Do you need to come up with a system for sharing tasks? Does one of you do a lot more than the other?",
+                "starter": "Could we talk about how we split up chores? I think we need a better system for dividing responsibilities.",
                 "ideas": [
-                    "",
-                    ""
+                    "I know neither of us are very clean people, but our place has gotten really gross. What do you think about choosing a day every month that we both agree to clean everything so it doesn't get out of hand?",
+                    "I feel like you don't really think about what needs to get done, and only help out if I ask, which I don't think I should have to do. Would you be open to something like a chore chart so things can be split more fairly?"
                 ]
             }
         ],

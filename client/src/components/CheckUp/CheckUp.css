@@ -1,3 +1,22 @@
+.CheckUp-modal {
+    margin-top: 130px;
+}
+
+.CheckUp-modal .modal-content {
+    background: #d3d3d3;
+    border-radius: 5px;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    color: #434344;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.CheckUp-modal-body {
+    background: white;
+    border-radius: 10px;
+}
+
+
 .CheckUp-toprow {
     padding-top: 30px;
 }

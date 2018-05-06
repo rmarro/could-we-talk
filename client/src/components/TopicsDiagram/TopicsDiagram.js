@@ -36,7 +36,7 @@ class TopicsDiagram extends React.Component {
                         <Button className={this.props.activeDiagramButton === "Sexual Health" ? "TopicsDiagram-button-selected" : "TopicsDiagram-button"} onClick={() => this.onTopicClick("Sexual Health")}>Sexual Health</Button>
                     </div>
                     <div className="col-md-6 text-center">
-                        <Button className={this.props.activeDiagramButton === "Other" ? "TopicsDiagram-button-selected" : "TopicsDiagram-button"} onClick={() => this.onTopicClick("Other")}>Other</Button>
+                        <Button className={this.props.activeDiagramButton === "Responsibilities" ? "TopicsDiagram-button-selected" : "TopicsDiagram-button"} onClick={() => this.onTopicClick("Responsibilities")}>Responsibilities</Button>
                     </div>
                 </div>
             </div>

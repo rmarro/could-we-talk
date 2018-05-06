@@ -75,12 +75,12 @@ const nodes = [
     "fx": -200,
     "fy": 300
   },
-  {
-    "text": "X1",
-    "url": "",
-    "fx": -500,
-    "fy": 150
-  },
+  // {
+  //   "text": "X1",
+  //   "url": "",
+  //   "fx": -500,
+  //   "fy": 150
+  // },
 
   {
     "text": "Responsibilities",
@@ -99,12 +99,12 @@ const nodes = [
     "fx": 200,
     "fy": 300
   },
-  {
-    "text": "X2",
-    "url": "",
-    "fx": 500,
-    "fy": 150
-  },
+  // {
+  //   "text": "X2",
+  //   "url": "",
+  //   "fx": 500,
+  //   "fy": 150
+  // },
   
 ]
 
@@ -157,10 +157,10 @@ const connections = [
     "source": "Sexual Health",
     "target": "Protection",
   },
-  {
-    "source": "Sexual Health",
-    "target": "X1",
-  },
+  // {
+  //   "source": "Sexual Health",
+  //   "target": "X1",
+  // },
   {
     "source": "Responsibilities",
     "target": "Finances",
@@ -169,10 +169,10 @@ const connections = [
     "source": "Responsibilities",
     "target": "Chores",
   },
-  {
-    "source": "Responsibilities",
-    "target": "X2",
-  }
+  // {
+  //   "source": "Responsibilities",
+  //   "target": "X2",
+  // }
 ]
 
 

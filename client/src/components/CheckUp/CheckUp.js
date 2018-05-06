@@ -83,7 +83,7 @@ class CheckUp extends React.Component {
         </div>
 
         {/* MODAL */}
-        <Modal className="CheckUp-modal" show={this.state.show} onHide={this.handleClose}>
+        <Modal className="CheckUp-modal" show={this.state.show} onHide={this.handleClose} bsSize="small">
           <Modal.Header className="CheckUp-modal-header">
             <Modal.Title className="CheckUp-modal-title">How it works:</Modal.Title>
           </Modal.Header>
