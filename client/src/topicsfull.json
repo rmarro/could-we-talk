@@ -113,11 +113,11 @@
         ]
     },
     {
-        "topic": "Other",
+        "topic": "Responsibilities",
         "num": 4,
         "subtopics": [
             {
-                "name": "",
+                "name": "Finances",
                 "description": "",
                 "talk": false,
                 "questions": "Before talking to your partner, think about what's been on your mind.",
@@ -128,7 +128,7 @@
                 ]
             },
             {
-                "name": "",
+                "name": "Chores",
                 "description": "",
                 "talk": false,
                 "questions": "Before talking to your partner, think about what's been on your mind.",
