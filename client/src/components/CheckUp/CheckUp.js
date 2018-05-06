@@ -28,8 +28,11 @@ class CheckUp extends React.Component {
   // Get all the topics info from the db
   componentDidMount = () => {
 		axios.get("/api/").then((response) => {
+      const topics = response.data.sort(function(a, b) {
+        return a.num - b.num
+      });
 			this.setState({
-				topics: response.data
+				topics: topics
       });
 		});
   }

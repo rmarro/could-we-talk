@@ -1,6 +1,7 @@
 [
     {
         "topic": "Communication",
+        "num": 1,
         "subtopics": [
             {
                 "name": "Frequency",
@@ -42,6 +43,7 @@
 
     {
         "topic": "Structure",
+        "num": 2,
         "subtopics": [
             {
                 "name": "Exclusivity",
@@ -81,6 +83,7 @@
     },
     {
         "topic": "Sexual Health",
+        "num": 3,
         "subtopics": [
             {
                 "name": "Sexual satisfaction",
@@ -104,10 +107,14 @@
                     "Before we hook up, I wanted to let you know I'm on PrEP and get tested regularly. Do you see a doctor regularly, or have you been tested recently?"
                 ]
             } 
+        ],
+        "resources": [
+            "http://www.scarleteen.com/tags/communication"
         ]
     },
     {
         "topic": "Other",
+        "num": 4,
         "subtopics": [
             {
                 "name": "",
@@ -131,6 +138,9 @@
                     ""
                 ]
             }
+        ],
+        "resources": [
+            "http://www.scarleteen.com/tags/communication"
         ]
     }
     
