@@ -5,6 +5,9 @@ const TopicSchema = new Schema({
     topic: {
         type: String
     },
+    num: {
+        type: Number
+    },
     subtopics: [
         {
             name: {
@@ -12,6 +15,9 @@ const TopicSchema = new Schema({
             },
             description: {
                 type: String
+            },
+            talk: {
+                type: Boolean
             },
             questions: {
                 type: String

@@ -1,0 +1,51 @@
+.CheckIn-modal {
+    margin-top: 130px;
+}
+
+.CheckIn-modal .modal-content {
+    background: #d3d3d3;
+    border-radius: 5px;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    color: #434344;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.CheckIn-modal-body {
+    background: white;
+    border-radius: 10px;
+}
+
+
+.CheckIn-toprow {
+    padding-top: 30px;
+}
+
+.CheckIn-toprow-div {
+  background-image: url("../../background.png");
+  padding-top: 40px;
+  border-radius: 20px;
+  border: 3px solid #61e6ed;
+  padding-right: 60px;
+  margin-bottom: 10px;
+}
+
+.CheckIn-diagram-div {
+    margin-top: 15px;
+}
+
+.CheckIn-suggestions-col {
+    min-height: 500px;
+}
+
+.CheckIn-showsuggestions-button {
+    font-size: 23px;
+    margin-bottom: 30px;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    background: #434344;
+    border: 3px solid #61E6ED;
+    color: #61E6ED;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px 22px 10px 22px;
+}
