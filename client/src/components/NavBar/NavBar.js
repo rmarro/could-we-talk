@@ -25,12 +25,12 @@ class MainNavBar extends React.Component {
                                 Home
                             </NavItem>
                         </LinkContainer>
-                        <LinkContainer exact="true" to="/checkup">
+                        <LinkContainer exact="true" to="/solo">
                             <NavItem eventKey={2}>
                                 Solo
                             </NavItem>
                         </LinkContainer>
-                        <NavItem eventKey={3} exact="true" href="#">
+                        <NavItem eventKey={3} exact="true" href="/couple">
                             Couple
                         </NavItem>
                         <LinkContainer exact="true" to="/resources">
