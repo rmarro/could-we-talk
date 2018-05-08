@@ -14,7 +14,7 @@ router.post("/user", (req, res) => User.create(req.body)
     .catch(function(err) {
         res.json(err);
     })
-)
+);
 
 // find user entries with same key
 router.get("/user/:key", (req, res) => User.find({key: req.params.key})
@@ -24,11 +24,6 @@ router.get("/user/:key", (req, res) => User.find({key: req.params.key})
     .catch(function(err) {
         res.json(err)
     })
-)
-
-
-
-// get one ("/api/:topic")
-// router.get("/:topic", (req, res) => Topics.find({topic: req.params.topic}).then(dbTopic => res.json(dbTopic)));
+);
 
 module.exports = router;

@@ -5,6 +5,8 @@ import TopicsExplorer from "../TopicsExplorer";
 import SuggestionsExplorer from "../SuggestionsExplorer";
 import { Button } from "react-bootstrap";
 import { Modal } from "react-bootstrap";
+import { Form, FormGroup, ControlLabel, FormControl } from "react-bootstrap";
+
 // import topics from "../../topicsfull.json";
 import "./CheckIn.css";
 
@@ -20,7 +22,9 @@ class CheckIn extends React.Component {
       topics: [],
       showSuggestions: false,
       activePanelKey: "",
-      activeDiagramButton: ""
+      activeDiagramButton: "",
+      key: "",
+      results: []
     };
   }
   
@@ -66,15 +70,31 @@ class CheckIn extends React.Component {
     this.setState({topics: topics});
   }
 
-  // TODO CHANGE THIS TO POST ROUTE
-  // SEND KEY, INITIAL, AND STATE (KEY AND INITIAL WILL BE FROM FORM)
-  // "I'm done" Button to minimize explorer and show suggestions tabs
-  showSuggestionsClick = () => {
-    this.setState({ showSuggestions: true });
-    this.setState({ activePanelKey: "" });
-    this.setState({ activeDiagramButton: "" })
+
+  submitClick = () => {
+    console.log(this.initialsInput.value);
+    console.log(this.keyInput.value);
+
+    //save key as state key
+    //save initials, key, and state as user object
+    //post route to add new user to db
+    //getResults()
   }
 
+  getResults = () => {
+    //get route with :key
+    // if response is only 1... modal saying partner not done? with try again button that does the getResults again
+    // if results greater than 1, compareAnswers()
+  }
+  
+  compareAnswers = () => {
+    //user1 map each topic and map each subtopic to compare to user2 topicindex and subtopicindex
+    //if one or both are talk=true, set state of topicindex subtopicindex to true
+    this.setState({ showSuggestions: true });
+    this.setState({ activePanelKey: "" });
+    this.setState({ activeDiagramButton: "" });
+  }
+  
   render() {
     return (
       <div>
@@ -85,7 +105,7 @@ class CheckIn extends React.Component {
         </div>
 
         {/* MODAL */}
-        <Modal className="CheckIn-modal" show={this.state.show} onHide={this.handleClose} bsSize="small">
+        <Modal className="CheckIn-modal" show={this.state.show} onHide={this.handleClose}>
           <Modal.Header className="CheckIn-modal-header">
             <Modal.Title className="CheckIn-modal-title">How it works:</Modal.Title>
           </Modal.Header>
@@ -121,14 +141,25 @@ class CheckIn extends React.Component {
         {/* DONE BUTTON */}
         <div className="row">
           <div className="col-md-12 text-center">
-            <Button className="CheckIn-showsuggestions-button" onClick={this.showSuggestionsClick}>I'm done!</Button>
+            <Form inline>
+              <FormGroup controlId="formInlineInitials">
+                <ControlLabel>Initials</ControlLabel>{' '}
+                <FormControl inputRef={input => this.initialsInput = input} type="text"/>
+              </FormGroup>{' '}
+              <FormGroup controlId="formInlineKey">
+                <ControlLabel>Key</ControlLabel>{' '}
+                <FormControl inputRef={input => this.keyInput = input} type="text"/>
+              </FormGroup>{' '}
+              <Button className="CheckIn-submit-button" onClick={this.submitClick}>Submit</Button>
+            </Form>;           
+            {/* <Button className="CheckIn-submit-button" onClick={this.submitClick}>Submit</Button> */}
           </div>
         </div>
 
         {/* SUGGESTIONS */}
         <div className="row">
           <div className="col-md-12 CheckIn-suggestions-col">
-            { this.state.showSuggestions ? <SuggestionsExplorer topics={this.state.topics}/> : null }
+            { this.state.showSuggestions ? <SuggestionsExplorer topics={this.state.results}/> : null }
           </div>
         </div>
       </div>
