@@ -70,14 +70,24 @@ class CheckIn extends React.Component {
     this.setState({topics: topics});
   }
 
-
+  //Save form input as variables
   submitClick = () => {
-    console.log(this.initialsInput.value);
-    console.log(this.keyInput.value);
-
-    //save key as state key
-    //save initials, key, and state as user object
-    //post route to add new user to db
+    const initials = this.initialsInput.value;
+    const key = this.keyInput.value;
+    this.saveUser(initials, key);
+  }
+  
+  //Save key in state and create new user in db
+  saveUser = (initials, key) => {
+    this.setState({key: key});
+    const newUser = {
+      initials: initials,
+      key: key,
+      topics: this.state.topics
+    };
+    axios.post("/api/user", newUser).then((response) => {
+      console.log(response);
+    })
     //getResults()
   }
 
