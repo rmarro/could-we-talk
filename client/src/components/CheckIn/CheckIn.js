@@ -66,6 +66,8 @@ class CheckIn extends React.Component {
     this.setState({topics: topics});
   }
 
+  // TODO CHANGE THIS TO POST ROUTE
+  // SEND KEY, INITIAL, AND STATE (KEY AND INITIAL WILL BE FROM FORM)
   // "I'm done" Button to minimize explorer and show suggestions tabs
   showSuggestionsClick = () => {
     this.setState({ showSuggestions: true });
