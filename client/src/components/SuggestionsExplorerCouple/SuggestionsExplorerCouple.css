@@ -1,0 +1,41 @@
+/* 
+#d3d3d3
+#61E6ED
+#434344 
+*/
+
+.SuggestionsExplorerCouple-div {
+    margin-left: 70px;
+    margin-right: 70px;
+    /* border: solid #d3d3d3 3px; */
+    border-radius: 10px;
+    min-height: 500px;
+}
+
+.SuggestionsExplorerCouple-div>div>ul {
+    font-family: 'Arvo', Georgia, Times, serif;
+    font-weight: 600;
+    font-size: 20px;
+} 
+
+.SuggestionsExplorerCouple-div>div>ul>li {
+    background-color: #434344;
+    color: #d3d3d3;
+}
+
+
+
+.SuggestionsExplorerCouple-div>div>ul>li>a {
+    color: #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+}
+
+.SuggestionsExplorerCouple-div>div>ul>li:global(.active)>a, .SuggestionsExplorerCouple-div>div>ul>li>a:global(:hover), .SuggestionsExplorerCouple-div>div>ul>li:global(.active)>a:global(:hover), .SuggestionsExplorerCouple-div>div>ul>li:global(:focus)>a, .SuggestionsExplorerCouple-div>div>ul>li:global(.active, :focus) {
+    background-color: #434344;
+    color: #61E6ED;
+    border-left: solid #61e6ed 3px;
+    border-top: solid #61e6ed 3px;
+    border-right: solid #61e6ed 3px;
+}

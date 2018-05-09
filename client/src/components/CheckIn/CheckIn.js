@@ -2,7 +2,7 @@ import React from 'react';
 import axios from "axios";
 import TopicsDiagram from "../TopicsDiagram";
 import TopicsExplorer from "../TopicsExplorer";
-import SuggestionsExplorer from "../SuggestionsExplorer";
+import SuggestionsExplorerCouple from "../SuggestionsExplorerCouple";
 import { Button } from "react-bootstrap";
 import { Modal } from "react-bootstrap";
 import { Form, FormGroup, ControlLabel, FormControl } from "react-bootstrap";
@@ -24,7 +24,8 @@ class CheckIn extends React.Component {
       activePanelKey: "",
       activeDiagramButton: "",
       key: "",
-      results: []
+      results: [],
+      usernames: ""
     };
   }
   
@@ -36,7 +37,8 @@ class CheckIn extends React.Component {
         return a.num - b.num
       });
 			this.setState({
-				topics: topics
+        topics: topics,
+        results: topics
       });
 		});
   }
@@ -87,19 +89,39 @@ class CheckIn extends React.Component {
     };
     axios.post("/api/user", newUser).then((response) => {
       console.log(response);
-    })
-    //getResults()
+    });
+    this.getResults(key);
   }
 
-  getResults = () => {
+  // Get users with key and check if user is first or second to finish
+  getResults = (key) => {
     //get route with :key
-    // if response is only 1... modal saying partner not done? with try again button that does the getResults again
-    // if results greater than 1, compareAnswers()
+    axios.get("/api/user/" + key).then((response) => {
+      //TODO if response is only 1... modal saying partner not done? with try again button that does the getResults again
+      if (response.data.length === 1) {
+        console.log("You are the first to finish");
+      } else if (response.data.length === 2) {
+        this.compareAnswers(response.data)
+      }    
+    });
   }
   
-  compareAnswers = () => {
+  compareAnswers = (usersData) => {
+    const user1Data = usersData[0];
+    const user2Data = usersData[1];
+    const usernames = user1Data.initials + " & " + user2Data.initials;
+    this.setState({usernames: usernames})
     //user1 map each topic and map each subtopic to compare to user2 topicindex and subtopicindex
-    //if one or both are talk=true, set state of topicindex subtopicindex to true
+    user1Data.topics.map((topic, topicIndex) => {
+      topic.subtopics.map((subtopic, subtopicIndex) => {
+        //if one or both are talk=true, set state of topicindex subtopicindex to true
+        if (subtopic.talk === true || user2Data.topics[topicIndex].subtopics[subtopicIndex].talk === true) {
+          const results = this.state.results.slice();
+          results[topicIndex].subtopics[subtopicIndex].talk = true;
+          this.setState({results: results})
+        }
+      })
+    })
     this.setState({ showSuggestions: true });
     this.setState({ activePanelKey: "" });
     this.setState({ activeDiagramButton: "" });
@@ -153,7 +175,7 @@ class CheckIn extends React.Component {
           <div className="col-md-12 text-center">
             <Form inline>
               <FormGroup controlId="formInlineInitials">
-                <ControlLabel>Initials</ControlLabel>{' '}
+                <ControlLabel>Nickname or initials</ControlLabel>{' '}
                 <FormControl inputRef={input => this.initialsInput = input} type="text"/>
               </FormGroup>{' '}
               <FormGroup controlId="formInlineKey">
@@ -169,7 +191,7 @@ class CheckIn extends React.Component {
         {/* SUGGESTIONS */}
         <div className="row">
           <div className="col-md-12 CheckIn-suggestions-col">
-            { this.state.showSuggestions ? <SuggestionsExplorer topics={this.state.results}/> : null }
+            { this.state.showSuggestions ? <SuggestionsExplorerCouple topics={this.state.results} usernames={this.state.usernames}/> : null }
           </div>
         </div>
       </div>
