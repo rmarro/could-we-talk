@@ -61,6 +61,7 @@
 .Home-panel-subtext {
     line-height: 1.5;
     word-spacing: 2px;
+    font-size: 25px;
 }
 
 .Home-panel-button {
@@ -69,4 +70,8 @@
     color: #d3d3d3;
     font-size: 20px;
     font-weight: 700;
+}
+
+.Home-footer {
+    font-size: 25px;
 }

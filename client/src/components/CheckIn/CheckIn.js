@@ -15,10 +15,12 @@ class CheckIn extends React.Component {
   constructor(props, context) {
     super(props, context);
 
-    this.handleClose = this.handleClose.bind(this);
+    this.handleClose1 = this.handleClose1.bind(this);
+    this.handleClose2 = this.handleClose2.bind(this);
 
     this.state = {
-      show: true,
+      show1: true,
+      show2: false,
       topics: [],
       showSuggestions: false,
       activePanelKey: "",
@@ -43,9 +45,20 @@ class CheckIn extends React.Component {
 		});
   }
 
-  // Closes modal
-  handleClose() {
-    this.setState({ show: false });
+  // Closes modal 1
+  handleClose1() {
+    this.setState({ show1: false });
+  }
+
+  // Closes modal 2 (try again button) and checks for partner results again
+  handleClose2() {
+    this.setState({ show2: false });
+    this.getResults(this.state.key);
+  }
+
+  // Opens modal 2
+  handleOpen2() {
+    this.setState({ show2: true });
   }
 
   // Active topic in the diagram
@@ -97,9 +110,9 @@ class CheckIn extends React.Component {
   getResults = (key) => {
     //get route with :key
     axios.get("/api/user/" + key).then((response) => {
-      //TODO if response is only 1... modal saying partner not done? with try again button that does the getResults again
+      // if response is only 1 show modal saying partner not done with try again button
       if (response.data.length === 1) {
-        console.log("You are the first to finish");
+        this.handleOpen2();
       } else if (response.data.length === 2) {
         this.compareAnswers(response.data)
       }    
@@ -136,8 +149,8 @@ class CheckIn extends React.Component {
           </div>
         </div>
 
-        {/* MODAL */}
-        <Modal className="CheckIn-modal" show={this.state.show} onHide={this.handleClose}>
+        {/* FIRST MODAL */}
+        <Modal className="CheckIn-modal" show={this.state.show1} onHide={this.handleClose1}>
           <Modal.Header className="CheckIn-modal-header">
             <Modal.Title className="CheckIn-modal-title">How it works:</Modal.Title>
           </Modal.Header>
@@ -152,7 +165,24 @@ class CheckIn extends React.Component {
             </p>
           </Modal.Body>
           <Modal.Footer className="CheckIn-modal-footer">
-            <Button className="CheckIn-modal-button" onClick={this.handleClose}>Close</Button>
+            <Button className="CheckIn-modal-button" onClick={this.handleClose1}>Close</Button>
+          </Modal.Footer>
+        </Modal>
+
+        {/* SECOND MODAL */}
+        <Modal className="CheckIn-modal" show={this.state.show2} onHide={this.handleClose2}>
+          <Modal.Header className="CheckIn-modal-header">
+            <Modal.Title className="CheckIn-modal-title">How it works:</Modal.Title>
+          </Modal.Header>
+          <Modal.Body className="CheckIn-modal-body">
+            <h4>Looks like you're the first to finish!</h4>
+            <br />
+            <p>
+              When your partner has finished, you can try again.
+            </p>
+          </Modal.Body>
+          <Modal.Footer className="CheckIn-modal-footer">
+            <Button className="CheckIn-modal-button" onClick={this.handleClose2}>Try Again</Button>
           </Modal.Footer>
         </Modal>
 
@@ -170,23 +200,24 @@ class CheckIn extends React.Component {
           </div>
         </div>
         
-        {/* DONE BUTTON */}
+        {/* FORM AND SUBMIT BUTTON */}
         <div className="row">
           <div className="col-md-12 text-center">
             <Form inline>
-              <FormGroup controlId="formInlineInitials">
+              <FormGroup className="CheckIn-formgroup" controlId="formInlineInitials">
                 <ControlLabel>Nickname or initials</ControlLabel>{' '}
                 <FormControl inputRef={input => this.initialsInput = input} type="text"/>
               </FormGroup>{' '}
-              <FormGroup controlId="formInlineKey">
-                <ControlLabel>Key</ControlLabel>{' '}
+              <FormGroup className="CheckIn-formgroup" controlId="formInlineKey">
+                <ControlLabel>Key (must be identical to partner's)</ControlLabel>{' '}
                 <FormControl inputRef={input => this.keyInput = input} type="text"/>
               </FormGroup>{' '}
+              <br />
               <Button className="CheckIn-submit-button" onClick={this.submitClick}>Submit</Button>
             </Form>;           
-            {/* <Button className="CheckIn-submit-button" onClick={this.submitClick}>Submit</Button> */}
           </div>
         </div>
+        
 
         {/* SUGGESTIONS */}
         <div className="row">

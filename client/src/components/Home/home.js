@@ -17,7 +17,7 @@ const Home = () =>
             <Panel className="Home-panel">
                 <Panel.Body className="Home-panel-body">
                     <h1 className="Home-panel-header">Solo Explore</h1>
-                    <h3 className="Home-panel-subtext">Individually explore aspects of your relationship, and get customized conversation starters for things you want to address.</h3>
+                    <h2 className="Home-panel-subtext">Individually explore aspects of your relationship, and get customized conversation starters for things you want to address.</h2>
                     <br/>
                     <div><Button className="Home-panel-button" href="/solo">Get started</Button></div>
                 </Panel.Body>
@@ -27,11 +27,17 @@ const Home = () =>
             <Panel className="Home-panel">
                 <Panel.Body className="Home-panel-body">
                     <h1 className="Home-panel-header">Couple Explore</h1>
-                    <h3 className="Home-panel-subtext">Compares answers between you and your partner, then get a customized guide to talking through things you want to discuss.</h3>
+                    <h2 className="Home-panel-subtext">Compares answers between you and your partner, then get a customized guide to talking through things you want to discuss.</h2>
                     <br/>
                     <div><Button className="Home-panel-button" href="/couple">Get started</Button></div>
                 </Panel.Body>
             </Panel>
+        </div>
+    </div>
+
+    <div className="row Home-footer">
+        <div className="col-md-12 text-center">
+            Check it out on <a href="https://github.com/rmarro/could-we-talk" target="_blank">Github</a>
         </div>
     </div>
 
