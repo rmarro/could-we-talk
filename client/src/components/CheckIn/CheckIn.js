@@ -172,17 +172,17 @@ class CheckIn extends React.Component {
         {/* SECOND MODAL */}
         <Modal className="CheckIn-modal" show={this.state.show2} onHide={this.handleClose2}>
           <Modal.Header className="CheckIn-modal-header">
-            <Modal.Title className="CheckIn-modal-title">How it works:</Modal.Title>
+            <Modal.Title className="CheckIn-modal-title"></Modal.Title>
           </Modal.Header>
           <Modal.Body className="CheckIn-modal-body">
             <h4>Looks like you're the first to finish!</h4>
             <br />
             <p>
-              When your partner has finished, you can try again.
+              When your partner has finished, you can click the button below to get results.
             </p>
           </Modal.Body>
           <Modal.Footer className="CheckIn-modal-footer">
-            <Button className="CheckIn-modal-button" onClick={this.handleClose2}>Try Again</Button>
+            <Button className="CheckIn-modal-button" onClick={this.handleClose2}>Get Results</Button>
           </Modal.Footer>
         </Modal>
 

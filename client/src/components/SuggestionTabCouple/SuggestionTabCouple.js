@@ -56,7 +56,7 @@ class SuggestionTabCouple extends React.Component {
                         }
 					})}
 				</PanelGroup>
-				<Well>Check out these other resources on {this.props.topic}:
+				<Well className="SuggestionTabCouple-resources-well">Check out these other resources on {this.props.topic}:
 				<p>{this.props.resources.map(resource => {
 					return <li>{resource}</li>
 				})}</p></Well>

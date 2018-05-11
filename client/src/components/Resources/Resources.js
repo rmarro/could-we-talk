@@ -12,12 +12,15 @@ const nodes = [
 
   {
     "text": "Communication",
+    "url": "http://www.loveisrespect.org/healthy-relationships/communicate-better/",
+    "category": "article",
     "fx": -200,
     "fy": -150
   },
   {
     "text": "Frequency",
-    "url": "",
+    "url": "http://www.scarleteen.com/article/relationships/to_ditch_and_be_ditched_relationships_friends_and_finding_a_balance",
+    "category": "article",
     "fx": -400,
     "fy": -300
   },
@@ -29,13 +32,15 @@ const nodes = [
   },
   {
     "text": "Conflict Resolution",
-    "url": "",
+    "url": "http://www.scarleteen.com/article/relationships/how_to_clash_with_love_some_conflict_resolution_basics",
+    "category": "article",
     "fx": -500,
     "fy": -150
   },
 
   {
     "text": "Structure",
+    "url": "",
     "fx": 200,
     "fy": -150
   },
@@ -47,7 +52,8 @@ const nodes = [
   },
   {
     "text": "Exclusivity",
-    "url": "",
+    "url": "http://www.scarleteen.com/article/relationships/a_first_polyamory_guide",
+    "category": "article",
     "fx": 200,
     "fy": -300
   },
@@ -60,18 +66,21 @@ const nodes = [
 
   {
     "text": "Sexual Health",
+    "url": "",
     "fx": -200,
     "fy": 150
   },
   {
     "text": "Sexual Satisfaction",
-    "url": "",
+    "url": "http://www.scarleteen.com/article/sexuality/yield_for_pleasure",
+    "category": "article",
     "fx": -400,
     "fy": 300
   },
   {
     "text": "Protection",
-    "url": "",
+    "category": "youtube",
+    "url": "https://www.youtube.com/watch?v=tkVcpxOYhd8",
     "fx": -200,
     "fy": 300
   },
@@ -84,18 +93,21 @@ const nodes = [
 
   {
     "text": "Responsibilities",
+    "url": "",
     "fx": 200,
     "fy": 150
   },
   {
     "text": "Finances",
-    "url": "",
+    "url": "http://www.scarleteen.com/article/etc/you_them_and_a_uhaul_considering_cohabitation",
+    "category": "article",
     "fx": 400,
     "fy": 300
   },
   {
     "text": "Chores",
-    "url": "",
+    "url": "http://www.scarleteen.com/article/etc/you_them_and_a_uhaul_considering_cohabitation",
+    "category": "article",
     "fx": 200,
     "fy": 300
   },
