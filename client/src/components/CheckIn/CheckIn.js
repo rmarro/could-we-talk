@@ -102,8 +102,8 @@ class CheckIn extends React.Component {
     };
     axios.post("/api/user", newUser).then((response) => {
       console.log(response);
+      this.getResults(key);
     });
-    this.getResults(key);
   }
 
   // Get users with key and check if user is first or second to finish
